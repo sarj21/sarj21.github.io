@@ -16,7 +16,8 @@
   backface-visibility: hidden;
   transform: translateX(-105%);
 
-  @extend .z-depth-1;
+//  Remove the shadow
+//  @extend .z-depth-1;
 
   // Right Align
   &.right-aligned {
@@ -47,6 +48,8 @@
     line-height: $sidenav-item-height;
     padding: 0 ($sidenav-padding * 2);
 
+// No hover effects or button effects here
+/*
     &:hover { background-color: rgba(0,0,0,.05);}
 
     &.btn, &.btn-large, &.btn-flat, &.btn-floating {
@@ -61,6 +64,7 @@
     &.btn:hover,
     &.btn-large:hover { background-color: lighten($button-raised-background, 5%); }
     &.btn-floating:hover { background-color: $button-raised-background; }
+*/
   }
 
   li > a > i,

@@ -3,19 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title>Hello World!</title>
-    <link rel="stylesheet" type="text/css"  href="materialize.css">
+    <!-- Materialize CSS, compiled from Sass -->
+    <link rel="stylesheet" type="text/css"  href="css/materialize.css">
+    <!-- Materialize JS -->
+    <script src="js/materialize.js"></script>
+    <!-- Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- scrollSpy -->
+    <!-- <script src="js/scrollspy.js"></script> -->
+    <!-- Pushpin -->
+    <!-- <script src="js/pushpin.js"></script> -->
   </head>
   <body>
-    <h1>
-      Hyperloop was a pipe dream
+    <header>
+        <ul class="sidebar side-nav fixed">
+          <li>
+              <a href="#about"><img src="images/square.svg"> <span class="sidebar-title"> About </span></a>
+          </li>
+          <li>
+              <a href="#projects"><img src="images/circle.svg"> <span class="sidebar-title"> Projects </span></a>
+          </li>
+          <li>
+            <a href="#contact"><img src="images/triangle.svg"><span class="sidebar-title"> Contact </span></a>
+          </li>
+        </ul>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <section class="blue-grey" id="about">
+            About Section
+          </div>
 
-      Badum-Tsk
-    </h1>
+          <div class="section" id="projects">
+            Project Section
+          </div>
+
+          <div class="section" id="contact">
+            Contact Section
+          </div>
+        </div>
+      </div>
+
+    </main>
   </body>
 
-  <!--
-    It would seem someone made a huge mistake
-    They left the website open, so it was mine to take
-    Its easy to retrieve, though, dont yu worry
-  -->
+  <footer>
+    <script>
+      //Init Scrollspy
+      $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+      });
+
+    </script>
+  </footer>
 </html>

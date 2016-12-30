@@ -38,3 +38,46 @@
 @import "components/date_picker/default";
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
+
+.sidebar {
+  li {
+    //make those links magic
+    &:hover{
+      .sidebar-title{
+        opacity: 1;
+      }
+    }
+    //Spans are the new h5
+    span{
+      @extend h5;
+    }
+    //totally just the shapes though
+    img {
+      margin: 7px 15px 0 15px;
+      height: $h5-fontsize;
+      float: left;
+    }
+    //because links make everything align weird
+    a{
+    }
+    //minimalist
+    .sidebar-title{
+      opacity: 0;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out;
+    }
+
+  }
+  margin-top: 80px;
+  text-transform: lowercase;
+
+}
+
+//Fix my main block so it will not sit under the sidebar
+main{
+  padding-left: 150px;
+  section .card{
+    height: 1vh;
+  }
+}
