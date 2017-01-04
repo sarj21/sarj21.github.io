@@ -5,57 +5,550 @@
     <title>Hello World!</title>
     <!-- Materialize CSS, compiled from Sass -->
     <link rel="stylesheet" type="text/css"  href="css/materialize.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Materialize JS -->
     <script src="js/materialize.js"></script>
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- scrollSpy -->
-    <!-- <script src="js/scrollspy.js"></script> -->
-    <!-- Pushpin -->
-    <!-- <script src="js/pushpin.js"></script> -->
   </head>
   <body>
-    <header>
-        <ul class="sidebar side-nav fixed">
-          <li>
-              <a href="#about"><img src="images/square.svg"> <span class="sidebar-title"> About </span></a>
-          </li>
-          <li>
-              <a href="#projects"><img src="images/circle.svg"> <span class="sidebar-title"> Projects </span></a>
-          </li>
-          <li>
-            <a href="#contact"><img src="images/triangle.svg"><span class="sidebar-title"> Contact </span></a>
-          </li>
-        </ul>
-    </header>
-    <main>
-      <div class="container">
-        <div class="row">
-          <section class="blue-grey" id="about">
+    <div class="row teal about">
+       <div class="col l2">
+         <ul class="sidebar">
+           <li>
+               <a href="#about">
+                 <svg
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                    width="66.91449mm"
+                    height="66.91449mm"
+                    viewBox="0 0 237.09861 237.09858"
+                    id="square1"
+                    version="1.1"
+                    inkscape:version="0.91 r13725"
+                    sodipodi:docname="square-o.svg">
+                   <g
+                      inkscape:label="Layer 1"
+                      inkscape:groupmode="layer"
+                      id="layer1"
+                      transform="translate(1272.2026,253.55638)">
+                     <path
+                        sodipodi:type="star"
+                        style="opacity:0.19500002;fill:#90a4ae;fill-opacity:1;stroke:none;stroke-width:21;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                        id="path4136"
+                        sodipodi:sides="3"
+                        sodipodi:cx="-1974.2856"
+                        sodipodi:cy="1806.6479"
+                        sodipodi:r1="23.560604"
+                        sodipodi:r2="11.780302"
+                        sodipodi:arg1="-0.24497866"
+                        sodipodi:arg2="0.80221889"
+                        inkscape:flatsided="true"
+                        inkscape:rounded="-0.553102"
+                        inkscape:randomized="0"
+                        d="m -1951.4285,1800.9337 c -5.4743,-21.8972 -51.0376,22.1586 -29.337,28.3663 21.7006,6.2077 6.3289,-55.2792 -9.8974,-39.5898 -16.2264,15.6895 44.7087,33.1206 39.2344,11.2235 z"
+                        inkscape:transform-center-x="-2.0361273"
+                        inkscape:transform-center-y="1.7924263" />
+                     <path
+                        inkscape:transform-center-y="-9.7041372"
+                        d="m -773.5983,3.6907049 -194.87308,52.2160841 -52.21612,-194.873079 194.87312,-52.21609 z"
+                        inkscape:randomized="0"
+                        inkscape:rounded="0"
+                        inkscape:flatsided="true"
+                        sodipodi:arg2="1.3089969"
+                        sodipodi:arg1="0.52359878"
+                        sodipodi:r2="71.328499"
+                        sodipodi:r1="142.657"
+                        sodipodi:cy="-67.637794"
+                        sodipodi:cx="-897.14288"
+                        sodipodi:sides="4"
+                        id="path4146"
+                        style="opacity:1;fill:none;fill-opacity:1;stroke:#546e7a;stroke-width:23.77991676;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                        sodipodi:type="star"
+                        transform="matrix(0.27209838,-1.015485,1.015485,0.27209838,-840.85699,-1027.6381)"
+                        inkscape:transform-center-x="36.216512" />
+                   </g>
+                 </svg>
+                 <span class="sidebar-title"> About </span>
+               </a>
+           </li>
+           <li>
+               <a href="#projects">
+                 <svg id="circle1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.741mm" width="71.741mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 254.20141 254.20138">
+                   <g id="layer1" transform="translate(1693.8 526.2)">
+                     <circle id="path4148" cx="-1566.7" stroke-dashoffset="160.35" stroke="#546e7a" cy="-399.1" r="114.6" stroke-width="25" fill="none"/>
+                   </g>
+                 </svg>
+                 <span class="sidebar-title"> Projects </span>
+               </a>
+           </li>
+           <li>
+             <a href="#contact">
+               <svg id="triangle1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.013mm" width="81.632mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 289.2471 251.62197">
+                <g id="layer1" transform="translate(1077.9 115.77)">
+                 <path id="path4136" opacity="0.195" fill="#90a4ae" d="m-1951.4 1800.9c-5.4743-21.897-51.038 22.159-29.337 28.366 21.701 6.2077 6.3289-55.279-9.8974-39.59-16.226 15.69 44.709 33.121 39.234 11.224z"/>
+                 <path id="path4144" fill="none" stroke-dashoffset="160.35" transform="matrix(-.99577 0 0 -1.0002 -1819.3 -86.663)" stroke="#546e7a" stroke-width="25.05" d="m-766.29 16.578-247.09-0.000001 123.54-213.99z"/>
+                </g>
+               </svg>
+               <span class="sidebar-title"> Contact </span>
+             </a>
+           </li>
+         </ul>
+       </div>
+       <!-- <div class="col l2">
+         <ul class="sidebar">
+           <li>
+               <a href="#about">
+                 <svg
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                    width="66.91449mm"
+                    height="66.91449mm"
+                    viewBox="0 0 237.09861 237.09858"
+                    id="square1"
+                    version="1.1"
+                    inkscape:version="0.91 r13725"
+                    sodipodi:docname="square-o.svg">
+                   <g
+                      inkscape:label="Layer 1"
+                      inkscape:groupmode="layer"
+                      id="layer1"
+                      transform="translate(1272.2026,253.55638)">
+                     <path
+                        sodipodi:type="star"
+                        style="opacity:0.19500002;fill:#90a4ae;fill-opacity:1;stroke:none;stroke-width:21;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                        id="path4136"
+                        sodipodi:sides="3"
+                        sodipodi:cx="-1974.2856"
+                        sodipodi:cy="1806.6479"
+                        sodipodi:r1="23.560604"
+                        sodipodi:r2="11.780302"
+                        sodipodi:arg1="-0.24497866"
+                        sodipodi:arg2="0.80221889"
+                        inkscape:flatsided="true"
+                        inkscape:rounded="-0.553102"
+                        inkscape:randomized="0"
+                        d="m -1951.4285,1800.9337 c -5.4743,-21.8972 -51.0376,22.1586 -29.337,28.3663 21.7006,6.2077 6.3289,-55.2792 -9.8974,-39.5898 -16.2264,15.6895 44.7087,33.1206 39.2344,11.2235 z"
+                        inkscape:transform-center-x="-2.0361273"
+                        inkscape:transform-center-y="1.7924263" />
+                     <path
+                        inkscape:transform-center-y="-9.7041372"
+                        d="m -773.5983,3.6907049 -194.87308,52.2160841 -52.21612,-194.873079 194.87312,-52.21609 z"
+                        inkscape:randomized="0"
+                        inkscape:rounded="0"
+                        inkscape:flatsided="true"
+                        sodipodi:arg2="1.3089969"
+                        sodipodi:arg1="0.52359878"
+                        sodipodi:r2="71.328499"
+                        sodipodi:r1="142.657"
+                        sodipodi:cy="-67.637794"
+                        sodipodi:cx="-897.14288"
+                        sodipodi:sides="4"
+                        id="path4146"
+                        style="opacity:1;fill:none;fill-opacity:1;stroke:#546e7a;stroke-width:23.77991676;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                        sodipodi:type="star"
+                        transform="matrix(0.27209838,-1.015485,1.015485,0.27209838,-840.85699,-1027.6381)"
+                        inkscape:transform-center-x="36.216512" />
+                   </g>
+                 </svg>
+
+                 <svg
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                    width="66.91449mm"
+                    height="66.91449mm"
+                    viewBox="0 0 237.09861 237.09858"
+                    id="square2"
+                    version="1.1"
+                    inkscape:version="0.91 r13725"
+                    sodipodi:docname="square-o.svg">
+                   <g
+                      inkscape:label="Layer 1"
+                      inkscape:groupmode="layer"
+                      id="layer1"
+                      transform="translate(1272.2026,253.55638)">
+                     <path
+                        sodipodi:type="star"
+                        style="opacity:0.19500002;fill:#90a4ae;fill-opacity:1;stroke:none;stroke-width:21;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                        id="path4136"
+                        sodipodi:sides="3"
+                        sodipodi:cx="-1974.2856"
+                        sodipodi:cy="1806.6479"
+                        sodipodi:r1="23.560604"
+                        sodipodi:r2="11.780302"
+                        sodipodi:arg1="-0.24497866"
+                        sodipodi:arg2="0.80221889"
+                        inkscape:flatsided="true"
+                        inkscape:rounded="-0.553102"
+                        inkscape:randomized="0"
+                        d="m -1951.4285,1800.9337 c -5.4743,-21.8972 -51.0376,22.1586 -29.337,28.3663 21.7006,6.2077 6.3289,-55.2792 -9.8974,-39.5898 -16.2264,15.6895 44.7087,33.1206 39.2344,11.2235 z"
+                        inkscape:transform-center-x="-2.0361273"
+                        inkscape:transform-center-y="1.7924263" />
+                     <path
+                        inkscape:transform-center-y="-9.7041372"
+                        d="m -773.5983,3.6907049 -194.87308,52.2160841 -52.21612,-194.873079 194.87312,-52.21609 z"
+                        inkscape:randomized="0"
+                        inkscape:rounded="0"
+                        inkscape:flatsided="true"
+                        sodipodi:arg2="1.3089969"
+                        sodipodi:arg1="0.52359878"
+                        sodipodi:r2="71.328499"
+                        sodipodi:r1="142.657"
+                        sodipodi:cy="-67.637794"
+                        sodipodi:cx="-897.14288"
+                        sodipodi:sides="4"
+                        id="path4146"
+                        style="opacity:1;fill:none;fill-opacity:1;stroke:#ff5722;stroke-width:23.77991676;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                        sodipodi:type="star"
+                        transform="matrix(0.27209838,-1.015485,1.015485,0.27209838,-840.85699,-1027.6381)"
+                        inkscape:transform-center-x="36.216512" />
+                   </g>
+                 </svg>
+
+                 <svg
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                    width="66.91449mm"
+                    height="66.91449mm"
+                    viewBox="0 0 237.09861 237.09858"
+                    id="square3"
+                    version="1.1"
+                    inkscape:version="0.91 r13725"
+                    sodipodi:docname="square-o.svg">
+                   <g
+                      inkscape:label="Layer 1"
+                      inkscape:groupmode="layer"
+                      id="layer1"
+                      transform="translate(1272.2026,253.55638)">
+                     <path
+                        sodipodi:type="star"
+                        style="opacity:0.19500002;fill:#90a4ae;fill-opacity:1;stroke:none;stroke-width:21;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                        id="path4136"
+                        sodipodi:sides="3"
+                        sodipodi:cx="-1974.2856"
+                        sodipodi:cy="1806.6479"
+                        sodipodi:r1="23.560604"
+                        sodipodi:r2="11.780302"
+                        sodipodi:arg1="-0.24497866"
+                        sodipodi:arg2="0.80221889"
+                        inkscape:flatsided="true"
+                        inkscape:rounded="-0.553102"
+                        inkscape:randomized="0"
+                        d="m -1951.4285,1800.9337 c -5.4743,-21.8972 -51.0376,22.1586 -29.337,28.3663 21.7006,6.2077 6.3289,-55.2792 -9.8974,-39.5898 -16.2264,15.6895 44.7087,33.1206 39.2344,11.2235 z"
+                        inkscape:transform-center-x="-2.0361273"
+                        inkscape:transform-center-y="1.7924263" />
+                     <path
+                        inkscape:transform-center-y="-9.7041372"
+                        d="m -773.5983,3.6907049 -194.87308,52.2160841 -52.21612,-194.873079 194.87312,-52.21609 z"
+                        inkscape:randomized="0"
+                        inkscape:rounded="0"
+                        inkscape:flatsided="true"
+                        sodipodi:arg2="1.3089969"
+                        sodipodi:arg1="0.52359878"
+                        sodipodi:r2="71.328499"
+                        sodipodi:r1="142.657"
+                        sodipodi:cy="-67.637794"
+                        sodipodi:cx="-897.14288"
+                        sodipodi:sides="4"
+                        id="path4146"
+                        style="opacity:1;fill:none;fill-opacity:1;stroke:#ff5722;stroke-width:23.77991676;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                        sodipodi:type="star"
+                        transform="matrix(0.27209838,-1.015485,1.015485,0.27209838,-840.85699,-1027.6381)"
+                        inkscape:transform-center-x="36.216512" />
+                   </g>
+                 </svg>
+                 <span class="sidebar-title"> About </span>
+               </a>
+           </li>
+           <li>
+               <a href="#projects">
+                 <svg id="circle1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.741mm" width="71.741mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 254.20141 254.20138">
+                   <g id="layer1" transform="translate(1693.8 526.2)">
+                     <circle id="path4148" cx="-1566.7" stroke-dashoffset="160.35" stroke="#546e7a" cy="-399.1" r="114.6" stroke-width="25" fill="none"/>
+                   </g>
+                 </svg>
+
+                 <svg id="circle2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.741mm" width="71.741mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 254.20141 254.20138">
+                   <g id="layer1" transform="translate(1693.8 526.2)">
+                     <circle id="path4148" cx="-1566.7" stroke-dashoffset="160.35" stroke="#546e7a" cy="-399.1" r="114.6" stroke-width="25" fill="none"/>
+                   </g>
+                 </svg>
+
+                 <svg id="circle3" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.741mm" width="71.741mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 254.20141 254.20138">
+                   <g id="layer1" transform="translate(1693.8 526.2)">
+                     <circle id="path4148" cx="-1566.7" stroke-dashoffset="160.35" stroke="#546e7a" cy="-399.1" r="114.6" stroke-width="25" fill="none"/>
+                   </g>
+                 </svg>
+                 <span class="sidebar-title"> Projects </span>
+               </a>
+           </li>
+           <li>
+             <a href="#contact">
+               <svg id="triangle1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.013mm" width="81.632mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 289.2471 251.62197">
+                <g id="layer1" transform="translate(1077.9 115.77)">
+                 <path id="path4136" opacity="0.195" fill="#90a4ae" d="m-1951.4 1800.9c-5.4743-21.897-51.038 22.159-29.337 28.366 21.701 6.2077 6.3289-55.279-9.8974-39.59-16.226 15.69 44.709 33.121 39.234 11.224z"/>
+                 <path id="path4144" fill="none" stroke-dashoffset="160.35" transform="matrix(-.99577 0 0 -1.0002 -1819.3 -86.663)" stroke="#546e7a" stroke-width="25.05" d="m-766.29 16.578-247.09-0.000001 123.54-213.99z"/>
+                </g>
+               </svg>
+
+               <svg id="triangle2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.013mm" width="81.632mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 289.2471 251.62197">
+                <g id="layer1" transform="translate(1077.9 115.77)">
+                 <path id="path4136" opacity="0.195" fill="#90a4ae" d="m-1951.4 1800.9c-5.4743-21.897-51.038 22.159-29.337 28.366 21.701 6.2077 6.3289-55.279-9.8974-39.59-16.226 15.69 44.709 33.121 39.234 11.224z"/>
+                 <path id="path4144" fill="none" stroke-dashoffset="160.35" transform="matrix(-.99577 0 0 -1.0002 -1819.3 -86.663)" stroke="#546e7a" stroke-width="25.05" d="m-766.29 16.578-247.09-0.000001 123.54-213.99z"/>
+                </g>
+               </svg>
+
+               <svg id="triangle3" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.013mm" width="81.632mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 289.2471 251.62197">
+                <g id="layer1" transform="translate(1077.9 115.77)">
+                 <path id="path4136" opacity="0.195" fill="#90a4ae" d="m-1951.4 1800.9c-5.4743-21.897-51.038 22.159-29.337 28.366 21.701 6.2077 6.3289-55.279-9.8974-39.59-16.226 15.69 44.709 33.121 39.234 11.224z"/>
+                 <path id="path4144" fill="none" stroke-dashoffset="160.35" transform="matrix(-.99577 0 0 -1.0002 -1819.3 -86.663)" stroke="#546e7a" stroke-width="25.05" d="m-766.29 16.578-247.09-0.000001 123.54-213.99z"/>
+                </g>
+               </svg>
+               <span class="sidebar-title"> Contact </span>
+             </a>
+           </li>
+         </ul>
+       </div> -->
+       <div class="col l10">
+        <div class="block" id="about">
+          <div class="pushpin-section" data-target="about">
             About Section
           </div>
-
-          <div class="section" id="projects">
+        </div>
+      </div>
+    </div>
+    <div class="row deep-orange projects">
+      <div class="col l2">
+        <ul class="sidebar">
+          <li>
+              <a href="#about">
+                <svg
+                   xmlns:dc="http://purl.org/dc/elements/1.1/"
+                   xmlns:cc="http://creativecommons.org/ns#"
+                   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                   xmlns:svg="http://www.w3.org/2000/svg"
+                   xmlns="http://www.w3.org/2000/svg"
+                   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                   width="66.91449mm"
+                   height="66.91449mm"
+                   viewBox="0 0 237.09861 237.09858"
+                   id="square1"
+                   version="1.1"
+                   inkscape:version="0.91 r13725"
+                   sodipodi:docname="square-o.svg">
+                  <g
+                     inkscape:label="Layer 1"
+                     inkscape:groupmode="layer"
+                     id="layer1"
+                     transform="translate(1272.2026,253.55638)">
+                    <path
+                       sodipodi:type="star"
+                       style="opacity:0.19500002;fill:#90a4ae;fill-opacity:1;stroke:none;stroke-width:21;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                       id="path4136"
+                       sodipodi:sides="3"
+                       sodipodi:cx="-1974.2856"
+                       sodipodi:cy="1806.6479"
+                       sodipodi:r1="23.560604"
+                       sodipodi:r2="11.780302"
+                       sodipodi:arg1="-0.24497866"
+                       sodipodi:arg2="0.80221889"
+                       inkscape:flatsided="true"
+                       inkscape:rounded="-0.553102"
+                       inkscape:randomized="0"
+                       d="m -1951.4285,1800.9337 c -5.4743,-21.8972 -51.0376,22.1586 -29.337,28.3663 21.7006,6.2077 6.3289,-55.2792 -9.8974,-39.5898 -16.2264,15.6895 44.7087,33.1206 39.2344,11.2235 z"
+                       inkscape:transform-center-x="-2.0361273"
+                       inkscape:transform-center-y="1.7924263" />
+                    <path
+                       inkscape:transform-center-y="-9.7041372"
+                       d="m -773.5983,3.6907049 -194.87308,52.2160841 -52.21612,-194.873079 194.87312,-52.21609 z"
+                       inkscape:randomized="0"
+                       inkscape:rounded="0"
+                       inkscape:flatsided="true"
+                       sodipodi:arg2="1.3089969"
+                       sodipodi:arg1="0.52359878"
+                       sodipodi:r2="71.328499"
+                       sodipodi:r1="142.657"
+                       sodipodi:cy="-67.637794"
+                       sodipodi:cx="-897.14288"
+                       sodipodi:sides="4"
+                       id="path4146"
+                       style="opacity:1;fill:none;fill-opacity:1;stroke:#546e7a;stroke-width:23.77991676;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                       sodipodi:type="star"
+                       transform="matrix(0.27209838,-1.015485,1.015485,0.27209838,-840.85699,-1027.6381)"
+                       inkscape:transform-center-x="36.216512" />
+                  </g>
+                </svg>
+                <span class="sidebar-title"> About </span>
+              </a>
+          </li>
+          <li>
+              <a href="#projects">
+                <svg id="circle1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.741mm" width="71.741mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 254.20141 254.20138">
+                  <g id="layer1" transform="translate(1693.8 526.2)">
+                    <circle id="path4148" cx="-1566.7" stroke-dashoffset="160.35" stroke="#546e7a" cy="-399.1" r="114.6" stroke-width="25" fill="none"/>
+                  </g>
+                </svg>
+                <span class="sidebar-title"> Projects </span>
+              </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <svg id="triangle1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.013mm" width="81.632mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 289.2471 251.62197">
+               <g id="layer1" transform="translate(1077.9 115.77)">
+                <path id="path4136" opacity="0.195" fill="#90a4ae" d="m-1951.4 1800.9c-5.4743-21.897-51.038 22.159-29.337 28.366 21.701 6.2077 6.3289-55.279-9.8974-39.59-16.226 15.69 44.709 33.121 39.234 11.224z"/>
+                <path id="path4144" fill="none" stroke-dashoffset="160.35" transform="matrix(-.99577 0 0 -1.0002 -1819.3 -86.663)" stroke="#546e7a" stroke-width="25.05" d="m-766.29 16.578-247.09-0.000001 123.54-213.99z"/>
+               </g>
+              </svg>
+              <span class="sidebar-title"> Contact </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col l10">
+        <div class="block" id="projects">
+          <div class="pushpin-section" data-target="projects">
             Project Section
           </div>
-
-          <div class="section" id="contact">
+        </div>
+      </div>
+    </div>
+    <div class="row amber contact">
+      <div class="col l2">
+        <ul class="sidebar">
+          <li>
+              <a href="#about">
+                <svg
+                   xmlns:dc="http://purl.org/dc/elements/1.1/"
+                   xmlns:cc="http://creativecommons.org/ns#"
+                   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                   xmlns:svg="http://www.w3.org/2000/svg"
+                   xmlns="http://www.w3.org/2000/svg"
+                   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                   width="66.91449mm"
+                   height="66.91449mm"
+                   viewBox="0 0 237.09861 237.09858"
+                   id="square1"
+                   version="1.1"
+                   inkscape:version="0.91 r13725"
+                   sodipodi:docname="square-o.svg">
+                  <g
+                     inkscape:label="Layer 1"
+                     inkscape:groupmode="layer"
+                     id="layer1"
+                     transform="translate(1272.2026,253.55638)">
+                    <path
+                       sodipodi:type="star"
+                       style="opacity:0.19500002;fill:#90a4ae;fill-opacity:1;stroke:none;stroke-width:21;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                       id="path4136"
+                       sodipodi:sides="3"
+                       sodipodi:cx="-1974.2856"
+                       sodipodi:cy="1806.6479"
+                       sodipodi:r1="23.560604"
+                       sodipodi:r2="11.780302"
+                       sodipodi:arg1="-0.24497866"
+                       sodipodi:arg2="0.80221889"
+                       inkscape:flatsided="true"
+                       inkscape:rounded="-0.553102"
+                       inkscape:randomized="0"
+                       d="m -1951.4285,1800.9337 c -5.4743,-21.8972 -51.0376,22.1586 -29.337,28.3663 21.7006,6.2077 6.3289,-55.2792 -9.8974,-39.5898 -16.2264,15.6895 44.7087,33.1206 39.2344,11.2235 z"
+                       inkscape:transform-center-x="-2.0361273"
+                       inkscape:transform-center-y="1.7924263" />
+                    <path
+                       inkscape:transform-center-y="-9.7041372"
+                       d="m -773.5983,3.6907049 -194.87308,52.2160841 -52.21612,-194.873079 194.87312,-52.21609 z"
+                       inkscape:randomized="0"
+                       inkscape:rounded="0"
+                       inkscape:flatsided="true"
+                       sodipodi:arg2="1.3089969"
+                       sodipodi:arg1="0.52359878"
+                       sodipodi:r2="71.328499"
+                       sodipodi:r1="142.657"
+                       sodipodi:cy="-67.637794"
+                       sodipodi:cx="-897.14288"
+                       sodipodi:sides="4"
+                       id="path4146"
+                       style="opacity:1;fill:none;fill-opacity:1;stroke:#546e7a;stroke-width:23.77991676;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:160.35206604;stroke-opacity:1"
+                       sodipodi:type="star"
+                       transform="matrix(0.27209838,-1.015485,1.015485,0.27209838,-840.85699,-1027.6381)"
+                       inkscape:transform-center-x="36.216512" />
+                  </g>
+                </svg>
+                <span class="sidebar-title"> About </span>
+              </a>
+          </li>
+          <li>
+              <a href="#projects">
+                <svg id="circle1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.741mm" width="71.741mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 254.20141 254.20138">
+                  <g id="layer1" transform="translate(1693.8 526.2)">
+                    <circle id="path4148" cx="-1566.7" stroke-dashoffset="160.35" stroke="#546e7a" cy="-399.1" r="114.6" stroke-width="25" fill="none"/>
+                  </g>
+                </svg>
+                <span class="sidebar-title"> Projects </span>
+              </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <svg id="triangle1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="71.013mm" width="81.632mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 289.2471 251.62197">
+               <g id="layer1" transform="translate(1077.9 115.77)">
+                <path id="path4136" opacity="0.195" fill="#90a4ae" d="m-1951.4 1800.9c-5.4743-21.897-51.038 22.159-29.337 28.366 21.701 6.2077 6.3289-55.279-9.8974-39.59-16.226 15.69 44.709 33.121 39.234 11.224z"/>
+                <path id="path4144" fill="none" stroke-dashoffset="160.35" transform="matrix(-.99577 0 0 -1.0002 -1819.3 -86.663)" stroke="#546e7a" stroke-width="25.05" d="m-766.29 16.578-247.09-0.000001 123.54-213.99z"/>
+               </g>
+              </svg>
+              <span class="sidebar-title"> Contact </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col l10">
+        <div class="block" id="contact">
+          <div class="pushpin-section" data-target="contact">
             Contact Section
           </div>
         </div>
       </div>
-
-    </main>
+    </div>
   </body>
 
   <footer>
     <script>
       //Init Scrollspy
-      $(document).ready(function(){
-        $('.scrollspy').scrollSpy();
+      // $(document).ready(function(){
+      //   $('.scrollspy').scrollSpy( {scrollOffset: 0});
+      // });
+
+      $('.pushpin-section').each(function() {
+        var $this = $(this);
+        var $target = $('#' + $(this).attr('data-target'));
+        console.log($target);
+        $this.pushpin({
+          top: $target.offset().top,
+          bottom: $target.offset().top + $target.outerHeight() - $this.height()
+        });
       });
+
 
     </script>
   </footer>

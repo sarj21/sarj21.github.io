@@ -5261,7 +5261,6 @@ input[type=range]:focus::-ms-fill-upper {
   height: calc(100% + 60px);
   height: -moz-calc(100%);
   padding-bottom: 60px;
-  background-color: #fff;
   z-index: 999;
   overflow-y: auto;
   will-change: transform;
@@ -6589,21 +6588,56 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em; } }
 
 .sidebar {
+  left: 0;
+  position: fixed;
   margin-top: 80px;
   text-transform: lowercase; }
-  .sidebar li:hover .sidebar-title {
-    opacity: 1; }
-  .sidebar li img {
-    margin: 7px 15px 0 15px;
-    height: 1.64rem;
-    float: left; }
-  .sidebar li .sidebar-title {
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out; }
+  .sidebar li {
+    clip: rect(auto, auto, auto, auto);
+    float: none;
+    line-height: 48px; }
+    .sidebar li:hover .sidebar-title {
+      opacity: 1; }
+    .sidebar li span {
+      padding-left: 60px; }
+    .sidebar li svg {
+      margin: 8px 15px 0 15px;
+      height: 1.64rem;
+      width: 30px;
+      float: left;
+      position: absolute; }
+    .sidebar li a {
+      text-decoration: none;
+      color: black; }
+    .sidebar li .sidebar-title {
+      opacity: 0;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out; }
 
-main {
-  padding-left: 150px; }
-  main section .card {
-    height: 1vh; }
+.pushpin-section {
+  display: block; }
+
+.about {
+  z-index: 0; }
+  .about .sidebar {
+    z-index: 1; }
+  .about path, .about g, .about circle {
+    stroke: #2196F3 !important; }
+
+.projects {
+  z-index: 2; }
+  .projects .sidebar {
+    z-index: 3; }
+  .projects path, .projects g, .projects circle {
+    stroke: #4CAF50 !important; }
+
+.contact {
+  z-index: 4; }
+  .contact .sidebar {
+    z-index: 5; }
+  .contact path, .contact g, .contact circle {
+    stroke: #F44336 !important; }
+
+.block {
+  height: 100vh; }

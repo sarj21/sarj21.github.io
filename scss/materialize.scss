@@ -40,7 +40,13 @@
 @import "components/date_picker/default.time";
 
 .sidebar {
+  left: 0;
+  position: fixed;
+  margin-top: 80px;
+  text-transform: lowercase;
+
   li {
+    clip: rect(auto, auto, auto, auto);
     //make those links magic
     &:hover{
       .sidebar-title{
@@ -50,17 +56,23 @@
     //Spans are the new h5
     span{
       @extend h5;
+      padding-left: 60px;
     }
     //totally just the shapes though
-    img {
-      margin: 7px 15px 0 15px;
+    svg {
+      margin: 8px 15px 0 15px;
       height: $h5-fontsize;
+      width: 30px;
       float: left;
+      position: absolute;
     }
-    //because links make everything align weird
+
+    //because links dont have to be blue
     a{
+      text-decoration: none;
+      color: black;
     }
-    //minimalist
+
     .sidebar-title{
       opacity: 0;
       transition: opacity .25s ease-in-out;
@@ -68,16 +80,49 @@
       -webkit-transition: opacity .25s ease-in-out;
     }
 
+    float: none;
+    line-height: $sidenav-item-height;
+
   }
-  margin-top: 80px;
-  text-transform: lowercase;
+
 
 }
 
-//Fix my main block so it will not sit under the sidebar
-main{
-  padding-left: 150px;
-  section .card{
-    height: 1vh;
+.pushpin-section {
+  // height: 100vh;
+  display: block;
+}
+
+.about{
+  z-index: 0;
+  .sidebar{
+    z-index: 1;
   }
+  path, g, circle{
+    stroke: color("blue", "base") !important;
+  }
+}
+
+.projects{
+  z-index: 2;
+  .sidebar{
+    z-index: 3;
+  }
+  path, g, circle{
+    stroke: color("green", "base") !important;
+  }
+}
+
+.contact{
+  z-index: 4;
+  .sidebar{
+    z-index: 5;
+  }
+  path, g, circle{
+    stroke: color("red", "base") !important;
+  }
+}
+
+.block{
+  height: 100vh;
 }
