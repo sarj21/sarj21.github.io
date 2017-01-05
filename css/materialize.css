@@ -3182,11 +3182,11 @@ html {
     html {
       font-size: 15px; } }
 
-h1, h2, h3, h4, h5, .sidebar li span, h6 {
+h1, h2, h3, h4, h5, .sidebar li span, .sidebar li text, h6 {
   font-weight: 400;
   line-height: 1.1; }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, .sidebar li span a, h6 a {
+h1 a, h2 a, h3 a, h4 a, h5 a, .sidebar li span a, .sidebar li text a, h6 a {
   font-weight: inherit; }
 
 h1 {
@@ -3209,7 +3209,7 @@ h4 {
   line-height: 110%;
   margin: 1.14rem 0 0.912rem 0; }
 
-h5, .sidebar li span {
+h5, .sidebar li span, .sidebar li text {
   font-size: 1.64rem;
   line-height: 110%;
   margin: 0.82rem 0 0.656rem 0; }
@@ -6588,24 +6588,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em; } }
 
 .sidebar {
-  left: 0;
   position: fixed;
   margin-top: 80px;
   text-transform: lowercase; }
   .sidebar li {
-    clip: rect(auto, auto, auto, auto);
+    color: white;
     float: none;
-    line-height: 48px; }
+    line-height: 48px;
+    width: 100%; }
     .sidebar li:hover .sidebar-title {
       opacity: 1; }
-    .sidebar li span {
+    .sidebar li span, .sidebar li text {
+      color: white;
       padding-left: 60px; }
     .sidebar li svg {
       margin: 8px 15px 0 15px;
       height: 1.64rem;
       width: 30px;
-      float: left;
       position: absolute; }
+    .sidebar li path, .sidebar li g, .sidebar li circle {
+      stroke: white !important; }
     .sidebar li a {
       text-decoration: none;
       color: black; }
@@ -6618,26 +6620,20 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .pushpin-section {
   display: block; }
 
+body .row {
+  margin-bottom: 0px !important; }
+
 .about {
-  z-index: 0; }
-  .about .sidebar {
-    z-index: 1; }
-  .about path, .about g, .about circle {
-    stroke: #2196F3 !important; }
+  background-color: #009688; }
 
 .projects {
-  z-index: 2; }
-  .projects .sidebar {
-    z-index: 3; }
-  .projects path, .projects g, .projects circle {
-    stroke: #4CAF50 !important; }
+  background-color: #ff5722; }
 
 .contact {
-  z-index: 4; }
-  .contact .sidebar {
-    z-index: 5; }
-  .contact path, .contact g, .contact circle {
-    stroke: #F44336 !important; }
+  background-color: #ffc107; }
 
 .block {
   height: 100vh; }
+
+.fixed {
+  position: fixed; }

@@ -39,14 +39,20 @@
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
 
+$menu-color : white;
+
 .sidebar {
-  left: 0;
   position: fixed;
   margin-top: 80px;
   text-transform: lowercase;
 
+
   li {
-    clip: rect(auto, auto, auto, auto);
+    color: $menu-color;
+    float: none;
+    line-height: $sidenav-item-height;
+    width: 100%;
+
     //make those links magic
     &:hover{
       .sidebar-title{
@@ -54,8 +60,9 @@
       }
     }
     //Spans are the new h5
-    span{
+    span, text{
       @extend h5;
+      color: $menu-color;
       padding-left: 60px;
     }
     //totally just the shapes though
@@ -63,8 +70,10 @@
       margin: 8px 15px 0 15px;
       height: $h5-fontsize;
       width: 30px;
-      float: left;
       position: absolute;
+    }
+    path, g, circle{
+      stroke: $menu-color !important;
     }
 
     //because links dont have to be blue
@@ -79,10 +88,6 @@
       -moz-transition: opacity .25s ease-in-out;
       -webkit-transition: opacity .25s ease-in-out;
     }
-
-    float: none;
-    line-height: $sidenav-item-height;
-
   }
 
 
@@ -93,36 +98,35 @@
   display: block;
 }
 
+body .row{
+  margin-bottom: 0px !important;
+}
+
 .about{
-  z-index: 0;
-  .sidebar{
-    z-index: 1;
-  }
-  path, g, circle{
-    stroke: color("blue", "base") !important;
-  }
+  // path, g, circle{
+  //   stroke: color("grey", "lighten-4") !important;
+  // }
+  background-color: color("teal", "base");
 }
 
 .projects{
-  z-index: 2;
-  .sidebar{
-    z-index: 3;
-  }
-  path, g, circle{
-    stroke: color("green", "base") !important;
-  }
+  // path, g, circle{
+  //   stroke: color("bgrey", "lighten-4") !important;
+  // }
+  background-color: color("deep-orange", "base");
 }
 
 .contact{
-  z-index: 4;
-  .sidebar{
-    z-index: 5;
-  }
-  path, g, circle{
-    stroke: color("red", "base") !important;
-  }
+  // path, g, circle{
+  //   stroke: color("grey", "lighten-4") !important;
+  // }
+  background-color: color("amber","base");
 }
 
 .block{
   height: 100vh;
+}
+
+.fixed{
+  position: fixed;
 }
