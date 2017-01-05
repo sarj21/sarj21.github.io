@@ -68,8 +68,8 @@ $menu-color : white;
     //totally just the shapes though
     svg {
       margin: 8px 15px 0 15px;
-      height: $h5-fontsize;
-      width: 30px;
+      height: $h5-fontsize !important;
+      width: 30px !important;
       position: absolute;
     }
     path, g, circle{

@@ -6603,8 +6603,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       padding-left: 60px; }
     .sidebar li svg {
       margin: 8px 15px 0 15px;
-      height: 1.64rem;
-      width: 30px;
+      height: 1.64rem !important;
+      width: 30px !important;
       position: absolute; }
     .sidebar li path, .sidebar li g, .sidebar li circle {
       stroke: white !important; }
