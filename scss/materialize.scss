@@ -41,17 +41,54 @@
 
 $menu-color : white;
 
-.sidebar {
-  position: fixed;
-  margin-top: 80px;
-  text-transform: lowercase;
+header {
+  height: 100vh;
+  background: url(../images/splash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
 
+  nav{
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 30px;
+  }
+
+  img{
+    vertical-align: middle;
+    color: white;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+body .row{
+  margin-bottom: 0 !important;
+}
+
+.header{
+  padding: 30px 0;
+}
+
+.stuck {
+  position:fixed;
+  top:0;
+}
+
+.section{
+  overflow: hidden;
+  position: relative;
+  // min-height: 400px;
+  //  padding: 0.75em;
+}
+
+.sidebar {
+  text-transform: lowercase;
+  overflow: hidden;
 
   li {
-    color: $menu-color;
-    float: none;
-    line-height: $sidenav-item-height;
-    width: 100%;
 
     //make those links magic
     &:hover{
@@ -60,22 +97,11 @@ $menu-color : white;
       }
     }
     //Spans are the new h5
-    span, text{
+    span {
       @extend h5;
       color: $menu-color;
-      padding-left: 60px;
+      padding-left: 75px;
     }
-    //totally just the shapes though
-    svg {
-      margin: 8px 15px 0 15px;
-      height: $h5-fontsize !important;
-      width: 30px !important;
-      position: absolute;
-    }
-    path, g, circle{
-      stroke: $menu-color !important;
-    }
-
     //because links dont have to be blue
     a{
       text-decoration: none;
@@ -90,41 +116,79 @@ $menu-color : white;
     }
   }
 
+  .menu-container{
+    padding-left: 25px;
+  }
+  .default-logo{
+    position: fixed;
+  }
+  .secondary-logo{
+    position: absolute;
+  }
 
 }
 
-.pushpin-section {
-  // height: 100vh;
-  display: block;
+#project-cards{
+  margin: 50px auto 5px 0;
+  max-width: 1000px;
+  height: 100%;
 }
 
-body .row{
-  margin-bottom: 0px !important;
+
+.card{
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  height: 300px;
+  img{
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  hr{
+    border-color: black;
+    border-top: 1px;
+  }
+  .card-title{
+    font-size: 32px;
+    margin: 20px 0;
+  }
+  .card-sub{
+    font-size: 18px;
+    padding: 10px 0 45px 0;
+  }
+  .card-content{
+    padding: 16px;
+  }
+  .card-desc{
+    padding-bottom: 10px;
+    text-transform: lowercase;
+  }
+  .ver{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
 }
 
 .about{
-  // path, g, circle{
-  //   stroke: color("grey", "lighten-4") !important;
-  // }
-  background-color: color("teal", "base");
+  background: color("grey", "lighten-4");
+  .info{
+    padding-top: 40px;
+  }
+
 }
 
 .projects{
-  // path, g, circle{
-  //   stroke: color("bgrey", "lighten-4") !important;
-  // }
-  background-color: color("deep-orange", "base");
+  background: color("grey", "lighten-2");
+
 }
 
 .contact{
-  // path, g, circle{
-  //   stroke: color("grey", "lighten-4") !important;
-  // }
-  background-color: color("amber","base");
+  background: color("grey", "lighten-4");
+
 }
 
 .block{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .fixed{
