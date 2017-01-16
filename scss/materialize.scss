@@ -43,7 +43,7 @@ $menu-color : white;
 
 header {
   height: 100vh;
-  background: url(../images/splash.jpg);
+  background: url(../images/splash-2.jpg);
   background-repeat: no-repeat;
   background-size: 100vw auto;
 
@@ -56,6 +56,19 @@ header {
   img{
     vertical-align: middle;
     color: white;
+  }
+
+  .welcome{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    transform: translateX(27%);
+    height: 100%;
+    position: absolute;
+    top: 40%;
+    left: 34.443%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px;
+    text-align: center;
   }
 }
 
@@ -84,6 +97,11 @@ body .row{
   //  padding: 0.75em;
 }
 
+
+header span{
+  color: white;
+}
+
 .sidebar {
   text-transform: lowercase;
   overflow: hidden;
@@ -98,9 +116,10 @@ body .row{
     }
     //Spans are the new h5
     span {
+      position: fixed;
       @extend h5;
-      color: $menu-color;
-      padding-left: 75px;
+      margin: 0;
+      margin-left: 45px;
     }
     //because links dont have to be blue
     a{
@@ -109,6 +128,7 @@ body .row{
     }
 
     .sidebar-title{
+      transform:translateY(-3px);
       opacity: 0;
       transition: opacity .25s ease-in-out;
       -moz-transition: opacity .25s ease-in-out;
@@ -117,7 +137,7 @@ body .row{
   }
 
   .menu-container{
-    padding-left: 25px;
+    padding: 0 10px 45px 25px;
   }
   .default-logo{
     position: fixed;
