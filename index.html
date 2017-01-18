@@ -12,7 +12,7 @@
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass" rel="stylesheet">
 
   </head>
   <body>
@@ -25,18 +25,18 @@
         </nav>
       </div>
       <div class="row">
-        <div class="col l2 hide-on-small-and-down">
-          <ul class="sidebar">
+        <div class="col l2">
+          <ul class="sidebar hide-on-small-only">
               <li>
-                  <a class=".sidebar-link" href="#about">
+                  <a class="sidebar-link" href="#about">
                     <div class="menu-container">
                       <img src="images/square-white.svg" id="square" height="22px" width="22px" class="default-logo">
-                      <span class="sidebar-title valign default-logo" id="about-text"> About </span>
+                      <span class="sidebar-title default-logo" id="about-text"> About </span>
                     </div>
                   </a>
               </li>
               <li>
-                  <a class=".sidebar-link" href="#projects">
+                  <a class="sidebar-link" href="#projects">
                     <div class="menu-container">
                       <img src="images/circle-white.svg" id="circle" height="22px" width="22px" class="default-logo">
                       <span class="sidebar-title valign  default-logo" id="projects-text"> Projects </span>
@@ -44,7 +44,7 @@
                  </a>
               </li>
               <li>
-                <a class=".sidebar-link" href="#contact">
+                <a class="sidebar-link" href="#contact">
                   <div class="menu-container">
                     <img src="images/triangle-white.svg" id="triangle" height="22px" width="22px" class="default-logo">
                     <span class="sidebar-title valign default-logo" id="contact-text"> Contact </span>
@@ -56,16 +56,16 @@
         <div class="col l10">
           <div class="welcome">
             <h1 style="text-align: center"> Hi, I'm Steven </h1>
-            <h2> I develop and code </h2>
+            <h2> I develop websites and code beautiful applications </h2>
           </div>
         </div>
       </div>
     </header>
     <div class="row about section">
-      <div class="col l2 hide-on-small-and-down">
+      <div class="col l2 hide-on-small-only">
         <ul class="sidebar">
             <li>
-                <a href="#about">
+                <a class="sidebar-link" href="#about">
                   <div class="menu-container">
                     <img src="images/square-red.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
                     <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
@@ -73,7 +73,7 @@
                 </a>
             </li>
             <li>
-                <a href="#projects">
+                <a class="sidebar-link" href="#projects">
                   <div class="menu-container">
                     <img src="images/circle-black.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
                     <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
@@ -81,7 +81,7 @@
                 </a>
             </li>
             <li>
-              <a href="#contact">
+              <a class="sidebar-link" href="#contact">
                 <div class="menu-container">
                   <img src="images/triangle-black.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
                   <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
@@ -91,21 +91,21 @@
           </ul>
       </div>
       <div class="col l10">
-        <div class="block" id="about">
-          <div class="pushpin-section row" data-target="about">
+          <div class="row">
             <div class="col l7 s12">
+              <h2> what do i know </h2>
+              <p class="subtitle">AJAJAJAJA</p>
               <p class="info">
-                I'm a hardworking guy but I really just don't know what I want to do yet. For now, I work in a little bit
+                I'm a hardworking but I really just don't know what I want to do yet. For now, I work in a little bit
                 of everything and love it all. I work with some hardware right now for work as an embedded software engineer and
                 that's going pretty well. As a hobby I like making keyboards from scratch, working on cool little apps, and some other stuff.
               </p>
             </div>
           </div>
-        </div>
       </div>
     </div>
     <div class="row projects section">
-      <div class="col l2 hide-on-small-and-down">
+      <div class="col l2 hide-on-small-only">
         <ul class="sidebar">
             <li>
                 <a href="#about">
@@ -134,14 +134,13 @@
           </ul>
       </div>
       <div class="col l10">
-        <div class="block" id="projects">
-          <div class="pushpin-section" data-target="projects">
+          <div class="row">
             <h3 class="header"> Things I've Done (and Am Doing) </h3>
             <!-- Begin Project Cards -->
             <div class="row" id="project-cards">
               <div class="col s12 m3">
                 <a href="#">
-                  <div class="card hoverable cyan lighten-3">
+                  <div class="card hoverable waves-effect waves-light cyan lighten-3">
                     <div class="card-content">
                       <span class="ver"> 0.1 </span>
                       <h4 class="card-title">Crossroad</h4>
@@ -155,7 +154,7 @@
 
               <div class="col s12 m3">
                 <a href="#">
-                  <div class="card hoverable pink lighten-3">
+                  <div class="card hoverable waves-effect waves-light pink lighten-3">
                     <div class="card-content">
                       <span class="ver"> 2.1 </span>
                       <h4 class="card-title">Creo 3D</h4>
@@ -169,7 +168,7 @@
 
               <div class="col s12 m3">
                 <a href="#">
-                  <div class="card hoverable green lighten-3">
+                  <div class="card hoverable waves-effect waves-light green lighten-3">
                     <div class="card-content">
                       <span class="ver"> 1.0 </span>
                       <h4 class="card-title">LS3, Inc</h4>
@@ -194,11 +193,10 @@
             <!-- End Project Card -->
             </div>
           </div>
-        </div>
       </div>
     </div>
     <div class="row contact section">
-      <div class="col l2 hide-on-small-and-down">
+      <div class="col l2 hide-on-small-only">
         <ul class="sidebar">
             <li>
                 <a href="#about">
@@ -227,10 +225,8 @@
           </ul>
       </div>
       <div class="col l10">
-        <div class="block" id="contact">
-          <div class="pushpin-section" data-target="contact">
-            Contact Section
-          </div>
+        <div class="row">
+          Contact Section
         </div>
       </div>
     </div>
@@ -248,23 +244,26 @@
       });
     };
 
-    // var reveal2 = function() {
-    //   $('.sidebar-link').each(function() {
-    //     var currentHover = $(this);
-    //     console.log(currentHover);
-    //     if(currentHover.attr("opacity") == 1){
-    //       console.log("hovered");
-    //     }
-    //   });
-    // };
-
       $(document).scroll(function() {
         setLogo();
       });
 
-      $('.sidebar-link').on('mouseover', function(){
-        var currentHover = $(this);
-        console.log(currentHover);
+      $('.sidebar-link').mouseover(function(){
+        var hoveredLink = $(this).attr('href');
+        $('.sidebar-link').each(function(){
+          if($(this).attr('href') == hoveredLink){
+            $(this).find("span").css('opacity', 1);
+          }
+        });
+      });
+
+      $('.sidebar-link').mouseout(function(){
+        var hoveredLink = $(this).attr('href');
+        $('.sidebar-link').each(function(){
+          if($(this).attr('href') == hoveredLink){
+            $(this).find("span").css('opacity', 0);
+          }
+        });
       });
 
     </script>

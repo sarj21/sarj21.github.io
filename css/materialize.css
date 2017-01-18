@@ -6591,7 +6591,7 @@ header {
   height: 100vh;
   background: url(../images/splash-2.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw auto; }
+  background-size: 100vw 100vh; }
   header nav {
     background-color: transparent;
     box-shadow: none;
@@ -6600,18 +6600,15 @@ header {
     vertical-align: middle;
     color: white; }
   header .welcome {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
     color: white;
-    -webkit-transform: translateX(27%);
-    -ms-transform: translateX(27%);
-    transform: translateX(27%);
-    height: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     position: absolute;
-    top: 40%;
-    left: 34.443%;
-    margin-left: -50px;
-    /* margin is -0.5 * dimension */
-    margin-top: -25px;
+    display: inline-block;
+    left: 50%;
+    top: 30%;
     text-align: center; }
 
 a {
@@ -6624,22 +6621,12 @@ body .row {
 .header {
   padding: 30px 0; }
 
-.stuck {
-  position: fixed;
-  top: 0; }
-
-.section {
-  overflow: hidden;
-  position: relative; }
-
 header span {
   color: white; }
 
 .sidebar {
   text-transform: lowercase;
   overflow: hidden; }
-  .sidebar li:hover .sidebar-title {
-    opacity: 1; }
   .sidebar li span {
     position: fixed;
     margin: 0;
@@ -6668,7 +6655,7 @@ header span {
   height: 100%; }
 
 .card {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
   width: 100%;
   height: 300px; }
   .card img {
@@ -6695,8 +6682,6 @@ header span {
 
 .about {
   background: #f5f5f5; }
-  .about .info {
-    padding-top: 40px; }
 
 .projects {
   background: #e0e0e0; }
@@ -6704,8 +6689,12 @@ header span {
 .contact {
   background: #f5f5f5; }
 
-.block {
-  min-height: 100vh; }
+.section {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative; }
+  .section h2 {
+    font-family: 'Overpass', sans-serif; }
 
 .fixed {
   position: fixed; }

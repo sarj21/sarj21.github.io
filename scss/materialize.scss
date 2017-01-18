@@ -45,7 +45,7 @@ header {
   height: 100vh;
   background: url(../images/splash-2.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw auto;
+  background-size: 100vw 100vh;
 
   nav{
     background-color: transparent;
@@ -59,15 +59,13 @@ header {
   }
 
   .welcome{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
     color: white;
-    transform: translateX(27%);
-    height: 100%;
+    transform: translateX(-50%);
     position: absolute;
-    top: 40%;
-    left: 34.443%;
-    margin-left: -50px; /* margin is -0.5 * dimension */
-    margin-top: -25px;
+    display: inline-block;
+    left: 50%;
+    top: 30%;
     text-align: center;
   }
 }
@@ -77,26 +75,16 @@ a{
   color: black;
 }
 
-body .row{
-  margin-bottom: 0 !important;
+
+body {
+  .row{
+    margin-bottom: 0 !important;
+  }
 }
 
 .header{
   padding: 30px 0;
 }
-
-.stuck {
-  position:fixed;
-  top:0;
-}
-
-.section{
-  overflow: hidden;
-  position: relative;
-  // min-height: 400px;
-  //  padding: 0.75em;
-}
-
 
 header span{
   color: white;
@@ -109,11 +97,11 @@ header span{
   li {
 
     //make those links magic
-    &:hover{
-      .sidebar-title{
-        opacity: 1;
-      }
-    }
+    // &:hover{
+    //   .sidebar-title{
+    //     opacity: 1;
+    //   }
+    // }
     //Spans are the new h5
     span {
       position: fixed;
@@ -156,7 +144,7 @@ header span{
 
 
 .card{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
   width: 100%;
   height: 300px;
   img{
@@ -191,25 +179,28 @@ header span{
 
 .about{
   background: color("grey", "lighten-4");
-  .info{
-    padding-top: 40px;
-  }
-
 }
-
 .projects{
   background: color("grey", "lighten-2");
-
 }
-
 .contact{
   background: color("grey", "lighten-4");
-
 }
 
-.block{
+//This should be strung together. E.g. about section or contact section
+//defines how i label each section with a heading and subtitle
+.section{
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  h2{
+    font-family: 'Overpass', sans-serif;
+  }
+  .subtitle{
+
+  }
 }
+
 
 .fixed{
   position: fixed;
