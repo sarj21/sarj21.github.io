@@ -179,12 +179,22 @@ header span{
 
 .about{
   background: color("grey", "lighten-4");
+  .sidebar li:first-child .sidebar-title{
+    color: #E53935;
+  }
 }
+
 .projects{
   background: color("grey", "lighten-2");
+  .sidebar li:nth-child(2) .sidebar-title{
+    color: #03A9F4;
+  }
 }
 .contact{
   background: color("grey", "lighten-4");
+  .sidebar li:nth-child(3) .sidebar-title{
+    color: #43A047;
+  }
 }
 
 //This should be strung together. E.g. about section or contact section

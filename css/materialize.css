@@ -6682,12 +6682,18 @@ header span {
 
 .about {
   background: #f5f5f5; }
+  .about .sidebar li:first-child .sidebar-title {
+    color: #E53935; }
 
 .projects {
   background: #e0e0e0; }
+  .projects .sidebar li:nth-child(2) .sidebar-title {
+    color: #03A9F4; }
 
 .contact {
   background: #f5f5f5; }
+  .contact .sidebar li:nth-child(3) .sidebar-title {
+    color: #43A047; }
 
 .section {
   min-height: 100vh;
