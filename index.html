@@ -26,30 +26,32 @@
       </div>
       <div class="row">
         <div class="col l2">
+          <!-- Wow this looks confusing...It kind of is -->
+          <!-- Basically the links sit on top of the page at z index 99 -->
+          <!-- The menu is very tricky so in order not to have 12 sets of links I do this -->
+          <div class="sidebar-links">
+            <a href="#about" class="links"></a>
+            <a href="#projects" class="links"></a>
+            <a href="#contact" class="links"></a>
+          </div>
           <ul class="sidebar hide-on-small-only">
               <li>
-                  <a class="sidebar-link" href="#about">
-                    <div class="menu-container">
-                      <img src="images/square-white.svg" id="square" height="22px" width="22px" class="default-logo">
-                      <span class="sidebar-title default-logo" id="about-text"> About </span>
-                    </div>
-                  </a>
-              </li>
-              <li>
-                  <a class="sidebar-link" href="#projects">
-                    <div class="menu-container">
-                      <img src="images/circle-white.svg" id="circle" height="22px" width="22px" class="default-logo">
-                      <span class="sidebar-title   default-logo" id="projects-text"> Projects </span>
-                    </div>
-                 </a>
-              </li>
-              <li>
-                <a class="sidebar-link" href="#contact">
-                  <div class="menu-container">
-                    <img src="images/triangle-white.svg" id="triangle" height="22px" width="22px" class="default-logo">
-                    <span class="sidebar-title  default-logo" id="contact-text"> Contact </span>
+                  <div class="menu-container" data-target="about">
+                    <img src="images/square-white.svg" id="square" height="22px" width="22px" class="default-logo">
+                    <span class="sidebar-title default-logo" id="about-text"> About </span>
                   </div>
-                </a>
+              </li>
+              <li>
+                  <div class="menu-container" data-target="projects">
+                    <img src="images/circle-white.svg" id="circle" height="22px" width="22px" class="default-logo">
+                    <span class="sidebar-title   default-logo" id="projects-text"> Projects </span>
+                  </div>
+              </li>
+              <li>
+                <div class="menu-container" data-target="contact">
+                  <img src="images/triangle-white.svg" id="triangle" height="22px" width="22px" class="default-logo">
+                  <span class="sidebar-title  default-logo" id="contact-text"> Contact </span>
+                </div>
               </li>
             </ul>
         </div>
@@ -65,28 +67,22 @@
       <div class="col l2 hide-on-small-only">
         <ul class="sidebar">
             <li>
-                <a class="sidebar-link" href="#about">
-                  <div class="menu-container">
-                    <img src="images/square-red.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
-                    <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
-                  </div>
-                </a>
-            </li>
-            <li>
-                <a class="sidebar-link" href="#projects">
-                  <div class="menu-container">
-                    <img src="images/circle-black.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
-                    <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
-                  </div>
-                </a>
-            </li>
-            <li>
-              <a class="sidebar-link" href="#contact">
-                <div class="menu-container">
-                  <img src="images/triangle-black.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
-                  <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
+                <div class="menu-container" data-target="about">
+                  <img src="images/square-red.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
+                  <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
                 </div>
-              </a>
+            </li>
+            <li>
+                <div class="menu-container" data-target="projects">
+                  <img src="images/circle-black.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
+                  <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
+                </div>
+            </li>
+            <li>
+              <div class="menu-container" data-target="contact">
+                <img src="images/triangle-black.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
+                <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
+              </div>
             </li>
           </ul>
       </div>
@@ -108,28 +104,22 @@
       <div class="col l2 hide-on-small-only">
         <ul class="sidebar">
             <li>
-                <a class="sidebar-link" href="#about">
-                  <div class="menu-container">
-                    <img src="images/square-black.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
-                    <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
-                  </div>
-                </a>
-            </li>
-            <li>
-                <a class="sidebar-link" href="#projects">
-                  <div class="menu-container">
-                    <img src="images/circle-light-blue.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
-                    <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
-                  </div>
-                </a>
-            </li>
-            <li>
-              <a class="sidebar-link" href="#contact">
-                <div class="menu-container">
-                  <img src="images/triangle-black.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
-                  <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
+                <div class="menu-container" data-target="about">
+                  <img src="images/square-black.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
+                  <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
                 </div>
-              </a>
+            </li>
+            <li>
+                <div class="menu-container" data-target="projects">
+                  <img src="images/circle-light-blue.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
+                  <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
+                </div>
+            </li>
+            <li>
+              <div class="menu-container" data-target="contact">
+                <img src="images/triangle-black.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
+                <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
+              </div>
             </li>
           </ul>
       </div>
@@ -199,28 +189,22 @@
       <div class="col l2 hide-on-small-only">
         <ul class="sidebar">
             <li>
-                <a class="sidebar-link" href="#about">
-                  <div class="menu-container">
-                    <img src="images/square-black.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
-                    <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
-                  </div>
-                </a>
+              <div class="menu-container" data-target="about">
+                <img src="images/square-black.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
+                <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
+              </div>
             </li>
             <li>
-                <a class="sidebar-link" href="#projects">
-                  <div class="menu-container">
-                    <img src="images/circle-black.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
-                    <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
-                  </div>
-                </a>
+              <div class="menu-container" data-target="projects">
+                <img src="images/circle-black.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
+                <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
+              </div>
             </li>
             <li>
-              <a class="sidebar-link" href="#contact">
-                <div class="menu-container">
-                  <img src="images/triangle-green.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
-                  <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
-                </div>
-              </a>
+              <div class="menu-container" data-target="contact">
+                <img src="images/triangle-green.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
+                <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
+              </div>
             </li>
           </ul>
       </div>
@@ -248,19 +232,19 @@
         setLogo();
       });
 
-      $('.sidebar-link').mouseover(function(){
-        var hoveredLink = $(this).attr('href');
-        $('.sidebar-link').each(function(){
-          if($(this).attr('href') == hoveredLink){
+      $('.links').mouseover(function(){
+        var hoveredLink = $(this).attr('href').substring(1);
+        $('.menu-container').each(function(){
+          if($(this).attr('data-target') == hoveredLink){
             $(this).find("span").css('opacity', 1);
           }
         });
       });
 
-      $('.sidebar-link').mouseout(function(){
-        var hoveredLink = $(this).attr('href');
-        $('.sidebar-link').each(function(){
-          if($(this).attr('href') == hoveredLink){
+      $('.links').mouseout(function(){
+        var hoveredLink = $(this).attr('href').substring(1);
+        $('.menu-container').each(function(){
+          if($(this).attr('data-target') == hoveredLink){
             $(this).find("span").css('opacity', 0);
           }
         });

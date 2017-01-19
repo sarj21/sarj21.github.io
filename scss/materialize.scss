@@ -90,9 +90,24 @@ header span{
   color: white;
 }
 
+.menu-container{
+  overflow: hidden;
+}
+
+.sidebar-links{
+  position: fixed;
+  z-index: 99;
+}
+
+a.links{
+    margin: 15px 0 23px 0;
+    display: block;
+    width: 200px;
+    height: 22px
+}
+
 .sidebar {
   text-transform: lowercase;
-  overflow: hidden;
 
   li {
 
@@ -121,6 +136,10 @@ header span{
       transition: opacity .25s ease-in-out;
       -moz-transition: opacity .25s ease-in-out;
       -webkit-transition: opacity .25s ease-in-out;
+    }
+
+    .sidebar-link span,img{
+      cursor: pointer;
     }
   }
 
