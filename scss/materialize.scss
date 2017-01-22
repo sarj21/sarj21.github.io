@@ -1,17 +1,9 @@
-@charset "UTF-8";
-
-// Mixins
+@charset "UTF-8"; // Mixins
 // @import "components/prefixer";
 @import "components/mixins";
-@import "components/color";
-
-// Variables;
-@import "components/variables";
-
-// Reset
-@import "components/normalize";
-
-// components
+@import "components/color"; // Variables;
+@import "components/variables"; // Reset
+@import "components/normalize"; // components
 @import "components/global";
 @import "components/icons-material-design";
 @import "components/grid";
@@ -38,221 +30,243 @@
 @import "components/date_picker/default";
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
-
-$menu-color : white;
+$menu-color: white;
 
 header {
-  height: 100vh;
-  background: url(../images/splash-2.jpg);
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+    height           : 100vh;
+    background       : url("../images/splash-2.jpg");
+    background-repeat: no-repeat;
+    background-size  : 100vw 100vh;
 
-  nav{
-    background-color: transparent;
-    box-shadow: none;
-    padding-left: 30px;
-  }
+    nav {
+        background-color: transparent;
+        box-shadow      : none;
+        padding-left    : 30px;
+    }
 
-  img{
-    vertical-align: middle;
-    color: white;
-  }
+    img {
+        vertical-align: middle;
+        color         : white;
+    }
 
-  .welcome{
-    font-family: 'Overpass', sans-serif;
-    color: white;
-    transform: translateX(-50%);
-    position: absolute;
-    display: inline-block;
-    left: 50%;
-    top: 30%;
-    text-align: center;
-  }
+    .hero {
+        font-family: 'Overpass', sans-serif;
+        color      : white;
+        transform  : translateX(-50%);
+        position   : absolute;
+        display    : inline-block;
+        left       : 50%;
+        top        : 30%;
+        text-align : center;
+    }
+
+    #preloader {
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        background-color: color("grey", "lighten-4");
+        position        : fixed;
+        z-index         : 100;
+        top             : 0;
+        left            : 0;
+        right           : 0;
+        bottom          : 0;
+    }
 }
 
-a{
-  text-decoration: none;
-  color: black;
+a {
+    text-decoration: none;
+    color          : black;
 }
-
 
 body {
-  .row{
-    margin-bottom: 0 !important;
-  }
+    .row {
+        margin-bottom: 0 !important;
+    }
 }
 
-.header{
-  padding: 30px 0;
+.header {
+    padding: 30px 0;
 }
 
-header span{
-  color: white;
+header span {
+    color: white;
 }
 
-.menu-container{
-  overflow: hidden;
+.menu-container {
+    overflow: hidden;
 }
 
-.sidebar-links{
-  position: fixed;
-  z-index: 99;
+.sidebar-links {
+    position: fixed;
+    z-index : 99;
 }
 
-a.links{
-    margin: 15px 0 23px 0;
+a.links {
+    margin : 15px 0 23px;
     display: block;
-    width: 200px;
-    height: 22px
+    width  : 200px;
+    height : 22px;
 }
 
 .sidebar {
-  text-transform: lowercase;
-
-  li {
-
-    //make those links magic
-    // &:hover{
-    //   .sidebar-title{
-    //     opacity: 1;
-    //   }
-    // }
-    //Spans are the new h5
-    span {
-      position: fixed;
-      @extend h5;
-      margin: 0;
-      margin-left: 45px;
-    }
-    //because links dont have to be blue
-    a{
-      text-decoration: none;
-      color: black;
-    }
-
-    .sidebar-title{
-      transform:translateY(-3px);
-      opacity: 0;
-      transition: opacity .25s ease-in-out;
-      -moz-transition: opacity .25s ease-in-out;
-      -webkit-transition: opacity .25s ease-in-out;
-    }
-
-    .sidebar-link span,img{
-      cursor: pointer;
-    }
-  }
-
-  .menu-container{
-    padding: 0 10px 45px 25px;
-  }
-  .default-logo{
-    position: fixed;
-  }
-  .secondary-logo{
-    position: absolute;
-  }
-
-}
-
-#project-cards{
-  margin: 50px auto 5px 0;
-  max-width: 1000px;
-  height: 100%;
-
-}
-
-
-.card{
-  font-family: 'Overpass', sans-serif;
-  hr{
-    border-color: black;
-    border-top: 1px;
-  }
-  .card-title{
-    font-size: 32px;
-    margin: 20px 0;
-  }
-  .card-sub{
-    font-size: 18px;
-    padding: 10px 0 45px 0;
-  }
-  .card-content{
-    padding: 16px;
-  }
-  .card-desc{
-    padding-bottom: 10px;
     text-transform: lowercase;
-  }
-  .ver{
-    position: absolute;
-    right: 20px;
-    top: 10px;
-  }
-}
 
-.about{
-  background: color("grey", "lighten-4");
-  .sidebar li:first-child .sidebar-title{
-    color: #E53935;
-  }
-  .languages{
+    li {
+        //make those links magic
+        // &:hover{
+        //   .sidebar-title{
+        //     opacity: 1;
+        //   }
+        // }
+        //Spans are the new h5
+        span {
+            position: fixed;
+            @extend h5;
+            margin  : 0 0 0 45px;
+        }
+        //because links dont have to be blue
+        a {
+            text-decoration: none;
+            color          : black;
+        }
 
-  }
-  i{
-    font-size: 72px;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-  }
-  .card{
-    width: 100%;
-    padding: 5px 20px;
-    .devicon-title{
-      text-align: center;
-      font-family: 'Open-Sans', sans-serif;
-      font-size: 20px;
-      padding: 5px;
+        .sidebar-title {
+            transform         : translateY(-3px);
+            opacity           : 0;
+            transition        : opacity 0.25s ease-in-out;
+            -moz-transition   : opacity 0.25s ease-in-out;
+            -webkit-transition: opacity 0.25s ease-in-out;
+        }
+
+        .sidebar-link span,
+        img {
+            cursor: pointer;
+        }
     }
-  }
+
+    .menu-container {
+        padding: 0 10px 45px 25px;
+    }
+
+    .default-logo {
+        position: fixed;
+    }
+
+    .secondary-logo {
+        position: absolute;
+    }
 }
 
-.projects{
-  background: color("grey", "lighten-2");
-  .sidebar li:nth-child(2) .sidebar-title{
-    color: #03A9F4;
-  }
-  .card{
-    width: 100%;
-    height: 300px;
-  }
-}
-.contact{
-  background: color("grey", "lighten-4");
-  .sidebar li:nth-child(3) .sidebar-title{
-    color: #43A047;
-  }
+#project-cards {
+    margin   : 50px auto 5px 0;
+    max-width: 1000px;
+    height   : 100%;
 }
 
+.card {
+    font-family: 'Overpass', sans-serif;
+
+    hr {
+        border-color: black;
+        border-top  : 1px;
+    }
+
+    .card-title {
+        font-size: 32px;
+        margin   : 20px 0;
+    }
+
+    .card-sub {
+        font-size: 18px;
+        padding  : 10px 0 45px;
+    }
+
+    .card-content {
+        padding: 16px;
+    }
+
+    .card-desc {
+        padding-bottom: 10px;
+        text-transform: lowercase;
+    }
+
+    .ver {
+        position: absolute;
+        right   : 20px;
+        top     : 10px;
+    }
+}
+
+.about {
+    background: color("grey", "lighten-4");
+
+    .sidebar li:first-child .sidebar-title {
+        color: #E53935;
+    }
+
+    .languages {}
+
+    i {
+        font-size : 72px;
+        padding   : 10px;
+        text-align: center;
+        display   : inline-block;
+    }
+
+    .card {
+        width  : 100%;
+        padding: 5px 20px;
+
+        .devicon-title {
+            text-align : center;
+            font-family: 'Open-Sans', sans-serif;
+            font-size  : 20px;
+            padding    : 5px;
+        }
+    }
+}
+
+.projects {
+    background: color("grey", "lighten-2");
+
+    .sidebar li:nth-child(2) .sidebar-title {
+        color: #03A9F4;
+    }
+
+    .card {
+        width : 100%;
+        height: 300px;
+    }
+}
+
+.contact {
+    background: color("grey", "lighten-4");
+
+    .sidebar li:nth-child(3) .sidebar-title {
+        color: #43A047;
+    }
+}
 //This should be strung together. E.g. about section or contact section
 //defines how i label each section with a heading and subtitle
-.section{
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative;
-  h2{
-    font-family: 'Overpass', sans-serif;
-    margin-bottom: 10px;
-    text-transform: lowercase;
-  }
-  .subtitle{
-    margin-top: 0;
-    font-size: 20px;
 
-  }
+.section {
+    min-height: 100vh;
+    overflow  : hidden;
+    position  : relative;
+
+    h2 {
+        font-family   : 'Overpass', sans-serif;
+        margin-bottom : 10px;
+        text-transform: lowercase;
+    }
+
+    .subtitle {
+        margin-top: 0;
+        font-size : 20px;
+    }
 }
 
-
-.fixed{
-  position: fixed;
+.fixed {
+    position: fixed;
 }

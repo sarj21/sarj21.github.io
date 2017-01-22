@@ -6589,7 +6589,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 header {
   height: 100vh;
-  background: url(../images/splash-2.jpg);
+  background: url("../images/splash-2.jpg");
   background-repeat: no-repeat;
   background-size: 100vw 100vh; }
   header nav {
@@ -6599,7 +6599,7 @@ header {
   header img {
     vertical-align: middle;
     color: white; }
-  header .welcome {
+  header .hero {
     font-family: 'Overpass', sans-serif;
     color: white;
     -webkit-transform: translateX(-50%);
@@ -6610,6 +6610,23 @@ header {
     left: 50%;
     top: 30%;
     text-align: center; }
+  header #preloader {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 a {
   text-decoration: none;
@@ -6632,7 +6649,7 @@ header span {
   z-index: 99; }
 
 a.links {
-  margin: 15px 0 23px 0;
+  margin: 15px 0 23px;
   display: block;
   width: 200px;
   height: 22px; }
@@ -6641,8 +6658,7 @@ a.links {
   text-transform: lowercase; }
   .sidebar li span {
     position: fixed;
-    margin: 0;
-    margin-left: 45px; }
+    margin: 0 0 0 45px; }
   .sidebar li a {
     text-decoration: none;
     color: black; }
@@ -6651,10 +6667,11 @@ a.links {
     -ms-transform: translateY(-3px);
     transform: translateY(-3px);
     opacity: 0;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out; }
-  .sidebar li .sidebar-link span, .sidebar li img {
+    transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out; }
+  .sidebar li .sidebar-link span,
+  .sidebar li img {
     cursor: pointer; }
   .sidebar .menu-container {
     padding: 0 10px 45px 25px; }
@@ -6678,7 +6695,7 @@ a.links {
     margin: 20px 0; }
   .card .card-sub {
     font-size: 18px;
-    padding: 10px 0 45px 0; }
+    padding: 10px 0 45px; }
   .card .card-content {
     padding: 16px; }
   .card .card-desc {

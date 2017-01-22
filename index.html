@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Hello World!</title>
     <!-- Materialize CSS, compiled from Sass -->
-    <link rel="stylesheet" type="text/css"  href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Materialize JS -->
@@ -16,278 +17,324 @@
     <!-- Devicons, those pretty language icons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div>
-        <nav>
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo center"><img src="images/logo.png" height="45px"></a>
-          </div>
-        </nav>
-      </div>
-      <div class="row">
-        <div class="col l2">
-          <!-- Wow this looks confusing...It kind of is -->
-          <!-- Basically the links sit on top of the page at z index 99 -->
-          <!-- The menu is very tricky so in order not to have 12 sets of links I do this -->
-          <div class="sidebar-links">
-            <a href="#about" class="links"></a>
-            <a href="#projects" class="links"></a>
-            <a href="#contact" class="links"></a>
-          </div>
-          <ul class="sidebar hide-on-med-and-down">
-              <li>
-                  <div class="menu-container" data-target="about">
-                    <img src="images/square-white.svg" id="square" height="22px" width="22px" class="default-logo">
-                    <span class="sidebar-title default-logo" id="about-text"> About </span>
-                  </div>
-              </li>
-              <li>
-                  <div class="menu-container" data-target="projects">
-                    <img src="images/circle-white.svg" id="circle" height="22px" width="22px" class="default-logo">
-                    <span class="sidebar-title   default-logo" id="projects-text"> Projects </span>
-                  </div>
-              </li>
-              <li>
-                <div class="menu-container" data-target="contact">
-                  <img src="images/triangle-white.svg" id="triangle" height="22px" width="22px" class="default-logo">
-                  <span class="sidebar-title  default-logo" id="contact-text"> Contact </span>
+        <div>
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo center"><img src="images/logo.png" height="45px"></a>
                 </div>
-              </li>
+            </nav>
+        </div>
+        <div id="preloader">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col l2">
+                <!-- Wow this looks confusing...It kind of is -->
+                <!-- Basically the links sit on top of the page at z index 99 -->
+                <!-- The menu is very tricky so in order not to have 12 sets of links I do this -->
+                <div class="sidebar-links">
+                    <a href="#about" class="links"></a>
+                    <a href="#projects" class="links"></a>
+                    <a href="#contact" class="links"></a>
+                </div>
+                <ul class="sidebar hide-on-med-and-down">
+                    <li>
+                        <div class="menu-container" data-target="about">
+                            <img src="images/square-white.svg" id="square" height="22px" width="22px" class="default-logo">
+                            <span class="sidebar-title default-logo" id="about-text"> About </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-container" data-target="projects">
+                            <img src="images/circle-white.svg" id="circle" height="22px" width="22px" class="default-logo">
+                            <span class="sidebar-title   default-logo" id="projects-text"> Projects </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-container" data-target="contact">
+                            <img src="images/triangle-white.svg" id="triangle" height="22px" width="22px" class="default-logo">
+                            <span class="sidebar-title  default-logo" id="contact-text"> Contact </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l10">
+                <div class="hero">
+                    <h1 style="text-align: center"> Hi, I'm Steven </h1>
+                    <h2> I develop websites and code beautiful applications </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="row about section" id="about">
+        <div class="col l2 hide-on-med-and-down">
+            <ul class="sidebar">
+                <li>
+                    <div class="menu-container" data-target="about">
+                        <img src="images/square-red.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
+                        <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-container" data-target="projects">
+                        <img src="images/circle-black.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
+                        <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-container" data-target="contact">
+                        <img src="images/triangle-black.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
+                        <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
+                    </div>
+                </li>
             </ul>
         </div>
         <div class="col l10">
-          <div class="welcome">
-            <h1 style="text-align: center"> Hi, I'm Steven </h1>
-            <h2> I develop websites and code beautiful applications </h2>
-          </div>
+            <div class="row languages">
+                <h2> what do i  know </h2>
+                <p class="subtitle"> a bunch of apis, languages, and frameworks i've used </p>
+                <div class="col s12 l9">
+                    <div class="card blue lighten-1">
+                        <div class="card-content">
+                            <h4 class="card-title">Web Design</h4>
+                            <div>
+                                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                                <i class="devicon-bower-plain-wordmark colored"></i>
+                                <i class="devicon-coffeescript-plain-wordmark colored"></i>
+                                <i class="devicon-jquery-plain-wordmark"></i>
+                                <i class="devicon-php-plain colored"></i>
+                                <i class="devicon-sass-original colored"></i>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <img src="images/polymer.svg" height="60px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l3">
+                    <div class="card blue accent-2">
+                        <div class="card-content">
+                            <h4 class="card-title">Database</h4>
+                            <div>
+                                <i class="devicon-mysql-plain-wordmark colored"></i>
+                                <i class="devicon-mongodb-plain-wordmark colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l5">
+                    <div class="card blue lighten-4">
+                        <div class="card-content">
+                            <h4 class="card-title">Development</h4>
+                            <div>
+                                <i class="devicon-git-plain-wordmark colored"></i>
+                                <i class="devicon-github-plain-wordmark colored"></i>
+                                <i class="devicon-atom-plain-wordmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l7">
+                    <div class="card blue accent-1">
+                        <div class="card-content">
+                            <h4 class="card-title">Coding Languages</h4>
+                            <div>
+                                <i class="devicon-android-plain-wordmark colored"></i>
+                                <i class="devicon-c-plain-wordmark colored"></i>
+                                <i class="devicon-cplusplus-plain-wordmark colored"></i>
+                                <i class="devicon-java-plain-wordmark colored"></i>
+                                <i class="devicon-python-plain-wordmark colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="center-align">
+                        <a class="waves-effect waves-light purple lighten-2 btn" style="margin: 10px;">or see the full list</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row experience">
+            </div>
         </div>
-      </div>
-    </header>
-    <div class="row about section" id="about">
-      <div class="col l2 hide-on-med-and-down">
-        <ul class="sidebar">
-            <li>
-                <div class="menu-container" data-target="about">
-                  <img src="images/square-red.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
-                  <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
-                </div>
-            </li>
-            <li>
-                <div class="menu-container" data-target="projects">
-                  <img src="images/circle-black.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
-                  <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
-                </div>
-            </li>
-            <li>
-              <div class="menu-container" data-target="contact">
-                <img src="images/triangle-black.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
-                <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
-              </div>
-            </li>
-          </ul>
-      </div>
-      <div class="col l10">
-          <div class="row languages">
-            <h2> what do i  know </h2>
-            <p class="subtitle"> a bunch of apis, languages, and frameworks i've used </p>
-            <div class="col s12 l9">
-                <div class="card  light-blue darken-2">
-                  <div class="card-content">
-                    <h4 class="card-title">Web Design</h4>
-                    <div>
-                      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                      <i class="devicon-bower-plain-wordmark colored"></i>
-                      <i class="devicon-coffeescript-plain-wordmark colored"></i>
-                      <i class="devicon-jquery-plain-wordmark"></i>
-                      <i class="devicon-php-plain colored"></i>
-                      <i class="devicon-sass-original colored"></i>
-                      <i class="devicon-javascript-plain colored"></i>
-                      <img src="images/polymer.svg" height="60px">
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col s12 l3">
-                <div class="card  pink lighten-1">
-                  <div class="card-content">
-                    <h4 class="card-title">Database</h4>
-                    <div>
-                      <i class="devicon-mysql-plain-wordmark colored"></i>
-                      <i class="devicon-mongodb-plain-wordmark colored"></i>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col s12 l7">
-                <div class="card  deep-purple lighten-2">
-                  <div class="card-content">
-                    <h4 class="card-title">Coding Languages</h4>
-                    <div>
-                      <i class="devicon-android-plain-wordmark colored"></i>
-                      <i class="devicon-c-plain-wordmark colored"></i>
-                      <i class="devicon-cplusplus-plain-wordmark colored"></i>
-                      <i class="devicon-java-plain-wordmark colored"></i>
-                      <i class="devicon-python-plain-wordmark colored"></i>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col s12 l5">
-                <div class="card  teal darken-1">
-                  <div class="card-content">
-                    <h4 class="card-title">Development</h4>
-                    <div>
-                      <i class="devicon-git-plain-wordmark colored"></i>
-                      <i class="devicon-github-plain-wordmark colored"></i>
-                      <i class="devicon-atom-plain-wordmark"></i>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-      </div>
     </div>
     <div class="row projects section" id="projects">
-      <div class="col l2 hide-on-med-and-down">
-        <ul class="sidebar">
-            <li>
-                <div class="menu-container" data-target="about">
-                  <img src="images/square-black.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
-                  <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
-                </div>
-            </li>
-            <li>
-                <div class="menu-container" data-target="projects">
-                  <img src="images/circle-light-blue.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
-                  <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
-                </div>
-            </li>
-            <li>
-              <div class="menu-container" data-target="contact">
-                <img src="images/triangle-black.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
-                <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
-              </div>
-            </li>
-          </ul>
-      </div>
-      <div class="col l10">
-          <div class="row">
-            <h3 class="header"> Things I've Done (and Am Doing) </h3>
-            <!-- Begin Project Cards -->
-            <div class="row" id="project-cards">
-              <div class="col s12 m4 l3">
-                <a href="#">
-                  <div class="card hoverable waves-effect waves-light cyan lighten-3">
-                    <div class="card-content">
-                      <span class="ver"> 0.1 </span>
-                      <h4 class="card-title">Crossroad</h4>
-                      <p class="card-sub">Chrome <br> Extension</p>
-                      <hr />
-                      <p class="card-desc"> Chrome Extension similar to Google Now </p>
+        <div class="col l2 hide-on-med-and-down">
+            <ul class="sidebar">
+                <li>
+                    <div class="menu-container" data-target="about">
+                        <img src="images/square-black.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
+                        <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
                     </div>
-                  </div>
-                </a>
-              </div>
+                </li>
+                <li>
+                    <div class="menu-container" data-target="projects">
+                        <img src="images/circle-light-blue.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
+                        <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-container" data-target="contact">
+                        <img src="images/triangle-black.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
+                        <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col l10">
+            <div class="row">
+                <h3 class="header"> Things I've Done (and Am Doing) </h3>
+                <!-- Begin Project Cards -->
+                <div class="row" id="project-cards">
+                    <div class="col s12 m4 l3">
+                        <a href="#">
+                            <div class="card hoverable waves-effect waves-light cyan lighten-3">
+                                <div class="card-content">
+                                    <span class="ver"> 0.1 </span>
+                                    <h4 class="card-title">Crossroad</h4>
+                                    <p class="card-sub">Chrome <br> Extension</p>
+                                    <hr />
+                                    <p class="card-desc"> Chrome Extension similar to Google Now </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-              <div class="col s12 m4 l3">
-                <a href="#">
-                  <div class="card hoverable waves-effect waves-light pink lighten-3">
-                    <div class="card-content">
-                      <span class="ver"> 2.1 </span>
-                      <h4 class="card-title">Creo 3D</h4>
-                      <p class="card-sub">Corporate  <br>Site</p>
-                      <hr />
-                      <p class="card-desc"> Showcase for a company I co-own</p>
+                    <div class="col s12 m4 l3">
+                        <a href="#">
+                            <div class="card hoverable waves-effect waves-light pink lighten-3">
+                                <div class="card-content">
+                                    <span class="ver"> 2.1 </span>
+                                    <h4 class="card-title">Creo 3D</h4>
+                                    <p class="card-sub">Corporate <br>Site</p>
+                                    <hr />
+                                    <p class="card-desc"> Showcase for a company I co-own</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                  </div>
-                </a>
-              </div>
 
-              <div class="col s12 m4 l3">
-                <a href="#">
-                  <div class="card hoverable waves-effect waves-light green lighten-3">
-                    <div class="card-content">
-                      <span class="ver"> 1.0 </span>
-                      <h4 class="card-title">LS3, Inc</h4>
-                      <p class="card-sub">Corporate <br> Site</p>
-                      <hr />
-                      <p class="card-desc"> simple page for info about a government contractor</p>
+                    <div class="col s12 m4 l3">
+                        <a href="#">
+                            <div class="card hoverable waves-effect waves-light green lighten-3">
+                                <div class="card-content">
+                                    <span class="ver"> 1.0 </span>
+                                    <h4 class="card-title">LS3, Inc</h4>
+                                    <p class="card-sub">Corporate <br> Site</p>
+                                    <hr />
+                                    <p class="card-desc"> simple page for info about a government contractor</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                  </div>
-                </a>
-              </div>
-            <!-- End Project Card -->
+                    <!-- End Project Card -->
+                </div>
             </div>
-          </div>
-      </div>
+        </div>
     </div>
     <div class="row contact section" id="contact">
-      <div class="col l2 hide-on-med-and-down">
-        <ul class="sidebar">
-            <li>
-              <div class="menu-container" data-target="about">
-                <img src="images/square-black.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
-                <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
-              </div>
-            </li>
-            <li>
-              <div class="menu-container" data-target="projects">
-                <img src="images/circle-black.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
-                <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
-              </div>
-            </li>
-            <li>
-              <div class="menu-container" data-target="contact">
-                <img src="images/triangle-green.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
-                <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
-              </div>
-            </li>
-          </ul>
-      </div>
-      <div class="col l10">
-        <div class="row">
-          Contact Section
+        <div class="col l2 hide-on-med-and-down">
+            <ul class="sidebar">
+                <li>
+                    <div class="menu-container" data-target="about">
+                        <img src="images/square-black.svg" data-target="square" height="22px" width="22px" class="secondary-logo">
+                        <span class="sidebar-title secondary-logo" data-target="about-text"> About </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-container" data-target="projects">
+                        <img src="images/circle-black.svg" data-target="circle" height="22px" width="22px" class="secondary-logo">
+                        <span class="sidebar-title secondary-logo" data-target="projects-text"> Projects </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-container" data-target="contact">
+                        <img src="images/triangle-green.svg" data-target="triangle" height="22px" width="22px" class="secondary-logo">
+                        <span class="sidebar-title secondary-logo" data-target="contact-text"> Contact </span>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </div>
+        <div class="col l10">
+            <div class="row">
+                Contact Section
+            </div>
+        </div>
     </div>
-  </body>
+</body>
 
-  <footer>
+<footer class="page-footer grey">
+    <div class="container">
+        <div class="row">
+            <div class="col s8">
+            </div>
+            <div class="col s4">
+                <div class="center-align">
+                    <h5>check out my resume</h5>
+                    <a class="waves-effect waves-light light-blue btn" style="margin: 10px;"> <i class="material-icons left">get_app</i>sure</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <span class="grey-text text-lighten-4 valign-wrapper"> Made with <i class="valign tiny material-icons" style="color: red; padding: 0 2px">favorite</i> in Erie, PA</span>
+
+        </div>
+    </div>
+
     <script>
-    var setLogo = function() {
-      $('.secondary-logo').each(function() {
-        var shapeId = '#' + $(this).attr("data-target");
-        $(this).css('top',
-          $(shapeId).offset().top -
-          $(this).closest('.section').offset().top
-        );
-      });
-    };
+        var setLogo = function() {
+            $('.secondary-logo').each(function() {
+                var shapeId = '#' + $(this).attr("data-target");
+                $(this).css('top',
+                    $(shapeId).offset().top -
+                    $(this).closest('.section').offset().top
+                );
+            });
+        };
 
-      $(document).scroll(function() {
-        setLogo();
-      });
-
-      $('.links').mouseover(function(){
-        var hoveredLink = $(this).attr('href').substring(1);
-        $('.menu-container').each(function(){
-          if($(this).attr('data-target') == hoveredLink){
-            $(this).find("span").css('opacity', 1);
-          }
+        $(document).scroll(function() {
+            setLogo();
         });
-      });
 
-      $('.links').mouseout(function(){
-        var hoveredLink = $(this).attr('href').substring(1);
-        $('.menu-container').each(function(){
-          if($(this).attr('data-target') == hoveredLink){
-            $(this).find("span").css('opacity', 0);
-          }
+        $('.links').mouseover(function() {
+            var hoveredLink = $(this).attr('href').substring(1);
+            $('.menu-container').each(function() {
+                if ($(this).attr('data-target') == hoveredLink) {
+                    $(this).find("span").css('opacity', 1);
+                }
+            });
         });
-      });
 
+        $('.links').mouseout(function() {
+            var hoveredLink = $(this).attr('href').substring(1);
+            $('.menu-container').each(function() {
+                if ($(this).attr('data-target') == hoveredLink) {
+                    $(this).find("span").css('opacity', 0);
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function(){
+        	$('.preloader-wrapper')
+        		.delay(1700)
+        		.fadeOut();
+        });
     </script>
-  </footer>
+</footer>
+
 </html>
