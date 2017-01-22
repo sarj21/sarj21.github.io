@@ -159,17 +159,12 @@ a.links{
   margin: 50px auto 5px 0;
   max-width: 1000px;
   height: 100%;
+
 }
 
 
 .card{
   font-family: 'Overpass', sans-serif;
-  width: 100%;
-  height: 300px;
-  img{
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
   hr{
     border-color: black;
     border-top: 1px;
@@ -201,12 +196,35 @@ a.links{
   .sidebar li:first-child .sidebar-title{
     color: #E53935;
   }
+  .languages{
+
+  }
+  i{
+    font-size: 72px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+  }
+  .card{
+    width: 100%;
+    padding: 5px 20px;
+    .devicon-title{
+      text-align: center;
+      font-family: 'Open-Sans', sans-serif;
+      font-size: 20px;
+      padding: 5px;
+    }
+  }
 }
 
 .projects{
   background: color("grey", "lighten-2");
   .sidebar li:nth-child(2) .sidebar-title{
     color: #03A9F4;
+  }
+  .card{
+    width: 100%;
+    height: 300px;
   }
 }
 .contact{
@@ -224,8 +242,12 @@ a.links{
   position: relative;
   h2{
     font-family: 'Overpass', sans-serif;
+    margin-bottom: 10px;
+    text-transform: lowercase;
   }
   .subtitle{
+    margin-top: 0;
+    font-size: 20px;
 
   }
 }

@@ -6669,12 +6669,7 @@ a.links {
   height: 100%; }
 
 .card {
-  font-family: 'Overpass', sans-serif;
-  width: 100%;
-  height: 300px; }
-  .card img {
-    margin-top: 15px;
-    margin-bottom: 20px; }
+  font-family: 'Overpass', sans-serif; }
   .card hr {
     border-color: black;
     border-top: 1px; }
@@ -6698,11 +6693,27 @@ a.links {
   background: #f5f5f5; }
   .about .sidebar li:first-child .sidebar-title {
     color: #E53935; }
+  .about i {
+    font-size: 72px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block; }
+  .about .card {
+    width: 100%;
+    padding: 5px 20px; }
+    .about .card .devicon-title {
+      text-align: center;
+      font-family: 'Open-Sans', sans-serif;
+      font-size: 20px;
+      padding: 5px; }
 
 .projects {
   background: #e0e0e0; }
   .projects .sidebar li:nth-child(2) .sidebar-title {
     color: #03A9F4; }
+  .projects .card {
+    width: 100%;
+    height: 300px; }
 
 .contact {
   background: #f5f5f5; }
@@ -6714,7 +6725,12 @@ a.links {
   overflow: hidden;
   position: relative; }
   .section h2 {
-    font-family: 'Overpass', sans-serif; }
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 10px;
+    text-transform: lowercase; }
+  .section .subtitle {
+    margin-top: 0;
+    font-size: 20px; }
 
 .fixed {
   position: fixed; }

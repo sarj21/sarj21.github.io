@@ -11,8 +11,10 @@
     <script src="js/materialize.js"></script>
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <!-- Fonts: Overpass and Open Sans from Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass" rel="stylesheet">
+    <!-- Devicons, those pretty language icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
   </head>
   <body>
@@ -34,7 +36,7 @@
             <a href="#projects" class="links"></a>
             <a href="#contact" class="links"></a>
           </div>
-          <ul class="sidebar hide-on-small-only">
+          <ul class="sidebar hide-on-med-and-down">
               <li>
                   <div class="menu-container" data-target="about">
                     <img src="images/square-white.svg" id="square" height="22px" width="22px" class="default-logo">
@@ -64,7 +66,7 @@
       </div>
     </header>
     <div class="row about section" id="about">
-      <div class="col l2 hide-on-small-only">
+      <div class="col l2 hide-on-med-and-down">
         <ul class="sidebar">
             <li>
                 <div class="menu-container" data-target="about">
@@ -87,21 +89,68 @@
           </ul>
       </div>
       <div class="col l10">
-          <div class="row">
-            <div class="col l7 s12">
-              <h2> what do i know </h2>
-              <p class="subtitle">AJAJAJAJA</p>
-              <p class="info">
-                I'm a hardworking but I really just don't know what I want to do yet. For now, I work in a little bit
-                of everything and love it all. I work with some hardware right now for work as an embedded software engineer and
-                that's going pretty well. As a hobby I like making keyboards from scratch, working on cool little apps, and some other stuff.
-              </p>
+          <div class="row languages">
+            <h2> what do i  know </h2>
+            <p class="subtitle"> a bunch of apis, languages, and frameworks i've used </p>
+            <div class="col s12 l9">
+                <div class="card  light-blue darken-2">
+                  <div class="card-content">
+                    <h4 class="card-title">Web Design</h4>
+                    <div>
+                      <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                      <i class="devicon-bower-plain-wordmark colored"></i>
+                      <i class="devicon-coffeescript-plain-wordmark colored"></i>
+                      <i class="devicon-jquery-plain-wordmark"></i>
+                      <i class="devicon-php-plain colored"></i>
+                      <i class="devicon-sass-original colored"></i>
+                      <i class="devicon-javascript-plain colored"></i>
+                      <img src="images/polymer.svg" height="60px">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col s12 l3">
+                <div class="card  pink lighten-1">
+                  <div class="card-content">
+                    <h4 class="card-title">Database</h4>
+                    <div>
+                      <i class="devicon-mysql-plain-wordmark colored"></i>
+                      <i class="devicon-mongodb-plain-wordmark colored"></i>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col s12 l7">
+                <div class="card  deep-purple lighten-2">
+                  <div class="card-content">
+                    <h4 class="card-title">Coding Languages</h4>
+                    <div>
+                      <i class="devicon-android-plain-wordmark colored"></i>
+                      <i class="devicon-c-plain-wordmark colored"></i>
+                      <i class="devicon-cplusplus-plain-wordmark colored"></i>
+                      <i class="devicon-java-plain-wordmark colored"></i>
+                      <i class="devicon-python-plain-wordmark colored"></i>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col s12 l5">
+                <div class="card  teal darken-1">
+                  <div class="card-content">
+                    <h4 class="card-title">Development</h4>
+                    <div>
+                      <i class="devicon-git-plain-wordmark colored"></i>
+                      <i class="devicon-github-plain-wordmark colored"></i>
+                      <i class="devicon-atom-plain-wordmark"></i>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
       </div>
     </div>
     <div class="row projects section" id="projects">
-      <div class="col l2 hide-on-small-only">
+      <div class="col l2 hide-on-med-and-down">
         <ul class="sidebar">
             <li>
                 <div class="menu-container" data-target="about">
@@ -128,7 +177,7 @@
             <h3 class="header"> Things I've Done (and Am Doing) </h3>
             <!-- Begin Project Cards -->
             <div class="row" id="project-cards">
-              <div class="col s12 m3">
+              <div class="col s12 m4 l3">
                 <a href="#">
                   <div class="card hoverable waves-effect waves-light cyan lighten-3">
                     <div class="card-content">
@@ -139,10 +188,10 @@
                       <p class="card-desc"> Chrome Extension similar to Google Now </p>
                     </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
 
-              <div class="col s12 m3">
+              <div class="col s12 m4 l3">
                 <a href="#">
                   <div class="card hoverable waves-effect waves-light pink lighten-3">
                     <div class="card-content">
@@ -156,7 +205,7 @@
                 </a>
               </div>
 
-              <div class="col s12 m3">
+              <div class="col s12 m4 l3">
                 <a href="#">
                   <div class="card hoverable waves-effect waves-light green lighten-3">
                     <div class="card-content">
@@ -169,24 +218,13 @@
                   </div>
                 </a>
               </div>
-
-              <div class="col s12 m3">
-                <div class="card hoverable amber lighten-3">
-                  <div class="card-content">
-                    <h4 class="card-title">Crossroad</h4>
-                    <p class="card-sub">Chrome  <br>Extension</p>
-                    <hr />
-                    <p class="card-desc"> Chrome Extension similar to Google Now </p>
-                  </div>
-                </div>
-              </div>
             <!-- End Project Card -->
             </div>
           </div>
       </div>
     </div>
     <div class="row contact section" id="contact">
-      <div class="col l2 hide-on-small-only">
+      <div class="col l2 hide-on-med-and-down">
         <ul class="sidebar">
             <li>
               <div class="menu-container" data-target="about">
