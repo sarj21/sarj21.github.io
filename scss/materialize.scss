@@ -33,10 +33,28 @@
 $menu-color: white;
 
 header {
-    height           : 100vh;
-    background       : url("../images/splash-2.jpg");
-    background-repeat: no-repeat;
-    background-size  : 100vw 100vh;
+    .hero {
+        height: 100vh;
+    }
+
+    .splash {
+        background       : url("../images/splash-2.jpg");
+        background-repeat: no-repeat;
+        background-size  : 100vw 100vh;
+    }
+
+    .preloader {
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        background-color: color("grey", "lighten-4");
+        position        : fixed;
+        z-index         : 100;
+        top             : 0;
+        left            : 0;
+        right           : 0;
+        bottom          : 0;
+    }
 
     nav {
         background-color: transparent;
@@ -49,7 +67,7 @@ header {
         color         : white;
     }
 
-    .hero {
+    .hi {
         font-family: 'Overpass', sans-serif;
         color      : white;
         transform  : translateX(-50%);
@@ -58,19 +76,6 @@ header {
         left       : 50%;
         top        : 30%;
         text-align : center;
-    }
-
-    #preloader {
-        display         : flex;
-        align-items     : center;
-        justify-content : center;
-        background-color: color("grey", "lighten-4");
-        position        : fixed;
-        z-index         : 100;
-        top             : 0;
-        left            : 0;
-        right           : 0;
-        bottom          : 0;
     }
 }
 
@@ -85,10 +90,6 @@ body {
     }
 }
 
-.header {
-    padding: 30px 0;
-}
-
 header span {
     color: white;
 }
@@ -99,7 +100,7 @@ header span {
 
 .sidebar-links {
     position: fixed;
-    z-index : 99;
+    z-index : 10;
 }
 
 a.links {
@@ -158,46 +159,6 @@ a.links {
     }
 }
 
-#project-cards {
-    margin   : 50px auto 5px 0;
-    max-width: 1000px;
-    height   : 100%;
-}
-
-.card {
-    font-family: 'Overpass', sans-serif;
-
-    hr {
-        border-color: black;
-        border-top  : 1px;
-    }
-
-    .card-title {
-        font-size: 32px;
-        margin   : 20px 0;
-    }
-
-    .card-sub {
-        font-size: 18px;
-        padding  : 10px 0 45px;
-    }
-
-    .card-content {
-        padding: 16px;
-    }
-
-    .card-desc {
-        padding-bottom: 10px;
-        text-transform: lowercase;
-    }
-
-    .ver {
-        position: absolute;
-        right   : 20px;
-        top     : 10px;
-    }
-}
-
 .about {
     background: color("grey", "lighten-4");
 
@@ -212,6 +173,12 @@ a.links {
         padding   : 10px;
         text-align: center;
         display   : inline-block;
+    }
+
+    .card img {
+        height: 72px;
+        width : 72px;
+        margin: 0 10px;
     }
 
     .card {
@@ -235,8 +202,44 @@ a.links {
     }
 
     .card {
-        width : 100%;
-        height: 300px;
+
+        hr {
+            border-color: black;
+            border-top  : 1px;
+        }
+
+        .card-title {
+            font-size: 32px;
+            margin   : 20px 0;
+        }
+
+        .card-sub {
+            font-size: 18px;
+            padding  : 10px 0 45px;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-desc {
+            padding-bottom: 10px;
+            text-transform: lowercase;
+        }
+
+        .ver {
+            color: white;
+            position: absolute;
+            right   : 20px;
+            top     : 10px;
+        }
+    }
+
+
+    #project-cards {
+        margin   : 20px auto 5px 0;
+        max-width: 1000px;
+        height   : 100%;
     }
 }
 

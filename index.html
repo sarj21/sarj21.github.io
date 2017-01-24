@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/sidebar.js"></script>
     <!-- Materialize JS -->
-    <script src="js/materialize.js"></script>
+    <!-- <script src="js/materialize.js"></script> -->
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Fonts: Overpass and Open Sans from Google Fonts -->
@@ -21,61 +22,65 @@
 
 <body>
     <header>
-        <div>
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo center"><img src="images/logo.png" height="45px"></a>
+        <div class="preloader hero">
+            <div class="preloader-wrapper big">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
                 </div>
-            </nav>
-        </div>
-        <div id="preloader">
-          <div class="preloader-wrapper big active">
-            <div class="spinner-layer spinner-blue-only">
-              <div class="circle-clipper left">
-                <div class="circle"></div>
-              </div><div class="gap-patch">
-                <div class="circle"></div>
-              </div><div class="circle-clipper right">
-                <div class="circle"></div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="row">
-            <div class="col l2">
-                <!-- Wow this looks confusing...It kind of is -->
-                <!-- Basically the links sit on top of the page at z index 99 -->
-                <!-- The menu is very tricky so in order not to have 12 sets of links I do this -->
-                <div class="sidebar-links">
-                    <a href="#about" class="links"></a>
-                    <a href="#projects" class="links"></a>
-                    <a href="#contact" class="links"></a>
+        <div class="splash hero">
+            <div>
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo center"><img src="images/logo.png" height="45px"></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col l2">
+                    <!-- Wow this looks confusing...It kind of is -->
+                    <!-- Basically the links sit on top of the page at z index 99 -->
+                    <!-- The menu is very tricky so in order not to have 12 sets of links I do this -->
+                    <div class="sidebar-links">
+                        <a href="#about" class="links"></a>
+                        <a href="#projects" class="links"></a>
+                        <a href="#contact" class="links"></a>
+                    </div>
+                    <ul class="sidebar hide-on-med-and-down">
+                        <li>
+                            <div class="menu-container" data-target="about">
+                                <img src="images/square-white.svg" id="square" height="22px" width="22px" class="default-logo">
+                                <span class="sidebar-title default-logo" id="about-text"> About </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-container" data-target="projects">
+                                <img src="images/circle-white.svg" id="circle" height="22px" width="22px" class="default-logo">
+                                <span class="sidebar-title   default-logo" id="projects-text"> Projects </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-container" data-target="contact">
+                                <img src="images/triangle-white.svg" id="triangle" height="22px" width="22px" class="default-logo">
+                                <span class="sidebar-title  default-logo" id="contact-text"> Contact </span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="sidebar hide-on-med-and-down">
-                    <li>
-                        <div class="menu-container" data-target="about">
-                            <img src="images/square-white.svg" id="square" height="22px" width="22px" class="default-logo">
-                            <span class="sidebar-title default-logo" id="about-text"> About </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-container" data-target="projects">
-                            <img src="images/circle-white.svg" id="circle" height="22px" width="22px" class="default-logo">
-                            <span class="sidebar-title   default-logo" id="projects-text"> Projects </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="menu-container" data-target="contact">
-                            <img src="images/triangle-white.svg" id="triangle" height="22px" width="22px" class="default-logo">
-                            <span class="sidebar-title  default-logo" id="contact-text"> Contact </span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col l10">
-                <div class="hero">
-                    <h1 style="text-align: center"> Hi, I'm Steven </h1>
-                    <h2> I develop websites and code beautiful applications </h2>
+                <div class="col l10">
+                    <div class="hi">
+                        <h1 style="text-align: center"> Hi, I'm Steven </h1>
+                        <h2> I develop websites and code beautiful applications </h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,23 +109,29 @@
             </ul>
         </div>
         <div class="col l10">
+            <div id="spinner" data-spinner='{"radius": 25}'></div>
             <div class="row languages">
+
+                <div class="col s12">
+                  <div class="card-panel red lighten-1">
+                    <span class="white-text"> <strong> Hey! </strong> This is still a work in progress as I just recently started getting everything together. Hopefully everything will be set up in the next few weeks!</span>
+                  </div>
+                </div>
+
                 <h2> what do i  know </h2>
                 <p class="subtitle"> a bunch of apis, languages, and frameworks i've used </p>
                 <div class="col s12 l9">
                     <div class="card blue lighten-1">
                         <div class="card-content">
                             <h4 class="card-title">Web Design</h4>
-                            <div>
-                                <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                                <i class="devicon-bower-plain-wordmark colored"></i>
-                                <i class="devicon-coffeescript-plain-wordmark colored"></i>
-                                <i class="devicon-jquery-plain-wordmark"></i>
-                                <i class="devicon-php-plain colored"></i>
-                                <i class="devicon-sass-original colored"></i>
-                                <i class="devicon-javascript-plain colored"></i>
-                                <img src="images/polymer.svg" height="60px">
-                            </div>
+                            <a href="http://getbootstrap.com/" class="waves-effect waves-light hoverable"><i class="devicon-bootstrap-plain-wordmark colored"></i></a>
+                            <a href="https://bower.io/" class="waves-effect waves-light hoverable"><i class="devicon-bower-plain-wordmark colored"></i></a>
+                            <a href="http://coffeescript.org/" class="waves-effect waves-light hoverable"><i class="devicon-coffeescript-plain-wordmark colored"></i></a>
+                            <a href="https://www.polymer-project.org/1.0/" class="waves-effect waves-light hoverable"><img src="images/polymer.svg"></a>
+                            <a href="https://jquery.com/" class="waves-effect waves-light hoverable"><i class="devicon-jquery-plain-wordmark"></i></a>
+                            <a href="http://php.net/manual/en/intro-whatis.php" class="waves-effect waves-light hoverable"><i class="devicon-php-plain colored"></i></a>
+                            <a href="http://sass-lang.com/" class="waves-effect waves-light hoverable"><i class="devicon-sass-original colored"></i></a>
+                            <a href="https://www.javascript.com/" class="waves-effect waves-light hoverable"><i class="devicon-javascript-plain colored"></i></a>
                         </div>
                     </div>
                 </div>
@@ -129,8 +140,8 @@
                         <div class="card-content">
                             <h4 class="card-title">Database</h4>
                             <div>
-                                <i class="devicon-mysql-plain-wordmark colored"></i>
-                                <i class="devicon-mongodb-plain-wordmark colored"></i>
+                                <a href="https://www.mysql.com/" class="waves-effect waves-light hoverable"><i class="devicon-mysql-plain-wordmark colored"></i></a>
+                                <a href="https://www.mongodb.com/" class="waves-effect waves-light hoverable"><i class="devicon-mongodb-plain-wordmark colored"></i></a>
                             </div>
                         </div>
                     </div>
@@ -140,9 +151,9 @@
                         <div class="card-content">
                             <h4 class="card-title">Development</h4>
                             <div>
-                                <i class="devicon-git-plain-wordmark colored"></i>
-                                <i class="devicon-github-plain-wordmark colored"></i>
-                                <i class="devicon-atom-plain-wordmark"></i>
+                                <a href="https://git-scm.com/" class="waves-effect waves-light hoverable"><i class="devicon-git-plain-wordmark colored"></i></a>
+                                <a href="https://github.com/" class="waves-effect waves-light hoverable"><i class="devicon-github-plain-wordmark colored"></i></a>
+                                <a href="https://atom.io/" class="waves-effect waves-light hoverable"><i class="devicon-atom-plain-wordmark"></i></a>
                             </div>
                         </div>
                     </div>
@@ -152,11 +163,11 @@
                         <div class="card-content">
                             <h4 class="card-title">Coding Languages</h4>
                             <div>
-                                <i class="devicon-android-plain-wordmark colored"></i>
-                                <i class="devicon-c-plain-wordmark colored"></i>
-                                <i class="devicon-cplusplus-plain-wordmark colored"></i>
-                                <i class="devicon-java-plain-wordmark colored"></i>
-                                <i class="devicon-python-plain-wordmark colored"></i>
+                                <a href="https://www.android.com/" class="waves-effect waves-light hoverable"><i class="devicon-android-plain-wordmark colored"></i></a>
+                                <a href="http://www.tutorialspoint.com/cprogramming/c_overview.htm?" class="waves-effect waves-light hoverable"><i class="devicon-c-plain-wordmark colored"></i></a>
+                                <a href="http://www.cplusplus.com/" class="waves-effect waves-light hoverable"><i class="devicon-cplusplus-plain-wordmark colored"></i></a>
+                                <a href="https://www.java.com/en/" class="waves-effect waves-light hoverable"><i class="devicon-java-plain-wordmark colored"></i></a>
+                                <a href="https://www.python.org/" class="waves-effect waves-light hoverable"><i class="devicon-python-plain-wordmark colored"></i></a>
                             </div>
                         </div>
                     </div>
@@ -196,9 +207,53 @@
         </div>
         <div class="col l10">
             <div class="row">
-                <h3 class="header"> Things I've Done (and Am Doing) </h3>
+                <h3> things i've done (and am still doing) </h3>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <a href="#">
+                            <div class="card hoverable waves-effect waves-light light-blue darken-1">
+                                <div class="card-image">
+                                    <img src="images/splash.jpg">
+                                    <span class="card-title">Google Later</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>A Chrome Extension that mimics Google Now. It takes over your new tab and provides relevent feedback much like Google Now on Android</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <a href="#">
+                            <div class="card hoverable waves-effect waves-light purple accent-1">
+                                <div class="card-image">
+                                    <img src="images/splash.jpg">
+                                    <span class="card-title">LS3, Inc Corporate Site</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>A simple, updated one page layout to provide quick information about this government contractor</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <a href="http://creo-3d.com/">
+                            <div class="card hoverable waves-effect waves-light red accent-2">
+                                <div class="card-image">
+                                    <img src="images/creo-3d-peek.jpg">
+                                    <span class="card-title">Creo 3D Printing Startup</span>
+                                </div>
+                                <div class="card-content">
+                                    <span class="ver">1.0</span>
+                                    <p>A startup created by myself and 3 other engineering students that provides quick, accessible 3D Printing opportunity to Blacksburg and the local area</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
                 <!-- Begin Project Cards -->
-                <div class="row" id="project-cards">
+                <!-- <div class="row" id="project-cards">
                     <div class="col s12 m4 l3">
                         <a href="#">
                             <div class="card hoverable waves-effect waves-light cyan lighten-3">
@@ -240,8 +295,8 @@
                             </div>
                         </a>
                     </div>
-                    <!-- End Project Card -->
-                </div>
+                </div> -->
+                <!-- End Project Cards -->
             </div>
         </div>
     </div>
@@ -270,14 +325,14 @@
         </div>
         <div class="col l10">
             <div class="row">
-                Contact Section
+                <h4> Still gotta fill out this contact me section! sarj21@gmail.com is my email if you need me in a hurry </h4>
             </div>
         </div>
     </div>
 </body>
 
-<footer class="page-footer grey">
-    <div class="container">
+<footer class="page-footer blue-grey darken-3">
+    <!-- <div class="container">
         <div class="row">
             <div class="col s8">
             </div>
@@ -294,45 +349,29 @@
             <span class="grey-text text-lighten-4 valign-wrapper"> Made with <i class="valign tiny material-icons" style="color: red; padding: 0 2px">favorite</i> in Erie, PA</span>
 
         </div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <p class="grey-text text-lighten-4 valign-wrapper"> Made with <i class="valign tiny material-icons" style="color: red; padding: 0 2px">favorite</i> in Erie, PA</p>
+
+            </div>
+
+        </div>
     </div>
-
     <script>
-        var setLogo = function() {
-            $('.secondary-logo').each(function() {
-                var shapeId = '#' + $(this).attr("data-target");
-                $(this).css('top',
-                    $(shapeId).offset().top -
-                    $(this).closest('.section').offset().top
-                );
-            });
-        };
-
-        $(document).scroll(function() {
-            setLogo();
+        $(document).ready(function() {
+            console.log('active');
+            $('.preloader-wrapper').addClass('active');
         });
 
-        $('.links').mouseover(function() {
-            var hoveredLink = $(this).attr('href').substring(1);
-            $('.menu-container').each(function() {
-                if ($(this).attr('data-target') == hoveredLink) {
-                    $(this).find("span").css('opacity', 1);
-                }
-            });
-        });
+        $(window).on('load', function() {
+            console.log("fired event");
+            $('.preloader').delay(400).fadeOut('slow');
 
-        $('.links').mouseout(function() {
-            var hoveredLink = $(this).attr('href').substring(1);
-            $('.menu-container').each(function() {
-                if ($(this).attr('data-target') == hoveredLink) {
-                    $(this).find("span").css('opacity', 0);
-                }
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function(){
-        	$('#preloader')
-        		.delay(1700)
-        		.fadeOut();
+            $('.preloader-wrapper')
+                .delay(400)
+                .fadeOut();
         });
     </script>
 </footer>

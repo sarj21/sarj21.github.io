@@ -1,0 +1,21 @@
+{
+  "name": "sarj21.github.io",
+  "homepage": "https://sarj21.github.io",
+  "authors": [
+    "Steven Roberts <sarj21@gmail.com>"
+  ],
+  "description": "personal website",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "devicon": "*"
+  }
+}
