@@ -6638,7 +6638,7 @@ a {
   text-decoration: none;
   color: black; }
 
-body .row {
+body > .row {
   margin-bottom: 0 !important; }
 
 header span {
@@ -6687,6 +6687,8 @@ a.links {
   background: #f5f5f5; }
   .about .sidebar li:first-child .sidebar-title {
     color: #E53935; }
+  .about .languages {
+    width: 100%; }
   .about i {
     font-size: 72px;
     padding: 10px;
@@ -6697,7 +6699,6 @@ a.links {
     width: 72px;
     margin: 0 10px; }
   .about .card {
-    width: 100%;
     padding: 5px 20px; }
     .about .card .devicon-title {
       text-align: center;
@@ -6742,6 +6743,13 @@ a.links {
   min-height: 100vh;
   overflow: hidden;
   position: relative; }
+  .section .col {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   .section h2 {
     font-family: 'Overpass', sans-serif;
     margin-bottom: 10px;

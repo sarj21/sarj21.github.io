@@ -9,6 +9,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/sidebar.js"></script>
+    <script src="bower_components/matchHeight/dist/jquery.matchHeight.js"></script>
     <!-- Materialize JS -->
     <!-- <script src="js/materialize.js"></script> -->
     <!-- Google Icon Font -->
@@ -109,18 +110,23 @@
             </ul>
         </div>
         <div class="col l10">
-            <div id="spinner" data-spinner='{"radius": 25}'></div>
-            <div class="row languages">
+            <div class="row" style="margin: auto 0px">
 
-                <div class="col s12">
-                  <div class="card-panel red lighten-1">
-                    <span class="white-text"> <strong> Hey! </strong> This is still a work in progress as I just recently started getting everything together. Hopefully everything will be set up in the next few weeks!</span>
-                  </div>
+                <div class="col s11">
+                    <div class="card-panel red lighten-1">
+                        <span class="white-text"> <strong> Hey! </strong> This is still a work in progress as I just recently started getting everything together. Hopefully everything will be set up in the next few weeks!</span>
+                    </div>
                 </div>
+                <div class="col s1">
 
-                <h2> what do i  know </h2>
-                <p class="subtitle"> a bunch of apis, languages, and frameworks i've used </p>
-                <div class="col s12 l9">
+                </div>
+            </div>
+
+            <h2> what do i  know </h2>
+            <p class="subtitle"> a bunch of apis, languages, and frameworks i've used </p>
+
+            <div class="row languages">
+                <div class="col s12 l8">
                     <div class="card blue lighten-1">
                         <div class="card-content">
                             <h4 class="card-title">Web Design</h4>
@@ -146,6 +152,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="col l1 hide-on-med-and-down"></div>
+            </div>
+            <div class="row languages">
                 <div class="col s12 l5">
                     <div class="card blue lighten-4">
                         <div class="card-content">
@@ -158,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 l7">
+                <div class="col s12 l6">
                     <div class="card blue accent-1">
                         <div class="card-content">
                             <h4 class="card-title">Coding Languages</h4>
@@ -172,12 +181,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12">
+                <div class="col l1 hide-on-med-and-down"></div>
+                <div class="col s11">
                     <div class="center-align">
                         <a class="waves-effect waves-light purple lighten-2 btn" style="margin: 10px;">or see the full list</a>
                     </div>
                 </div>
+                <div class="col s1">
+
+                </div>
             </div>
+
             <div class="row experience">
             </div>
         </div>
@@ -372,6 +386,12 @@
             $('.preloader-wrapper')
                 .delay(400)
                 .fadeOut();
+        });
+
+        $(function() {
+            $('.card').matchHeight({
+                byRow: true
+            });
         });
     </script>
 </footer>
