@@ -6687,24 +6687,40 @@ a.links {
   background: #f5f5f5; }
   .about .sidebar li:first-child .sidebar-title {
     color: #E53935; }
-  .about .languages {
+  .about .row {
     width: 100%; }
-  .about i {
-    font-size: 72px;
-    padding: 10px;
-    text-align: center;
-    display: inline-block; }
-  .about .card img {
-    height: 72px;
-    width: 72px;
-    margin: 0 10px; }
-  .about .card {
-    padding: 5px 20px; }
-    .about .card .devicon-title {
+  .about .languages {
+    margin-bottom: 0px; }
+    .about .languages i {
+      font-size: 72px;
+      padding: 10px;
       text-align: center;
-      font-family: 'Open-Sans', sans-serif;
-      font-size: 20px;
-      padding: 5px; }
+      display: inline-block; }
+    .about .languages .card {
+      padding: 5px 20px; }
+      .about .languages .card img {
+        height: 72px;
+        width: 72px;
+        margin: 0 10px; }
+      .about .languages .card .devicon-title {
+        text-align: center;
+        font-size: 20px;
+        padding: 5px; }
+      .about .languages .card .card-title {
+        margin-top: 5px; }
+  .about .experience .position {
+    margin-bottom: 15px; }
+  .about .experience .time {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px; }
+  .about .experience .bullet > .s1 {
+    padding-right: 0; }
+  .about .experience .bullet > .s11 {
+    padding-left: 0; }
+  .about .experience .tags .chip {
+    background-color: #b0bec5; }
 
 .projects {
   background: #e0e0e0; }
