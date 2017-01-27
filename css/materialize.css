@@ -6590,10 +6590,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 header .hero {
   height: 100vh; }
 
-header .splash {
-  background: url("../images/splash-2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh; }
+header img.splash {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%; }
 
 header .preloader {
   display: -webkit-flex;
@@ -6605,18 +6606,18 @@ header .preloader {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #f5f5f5;
+  background-color: #eee;
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  background-color: #f5f5f5; }
 
 header nav {
   background-color: transparent;
-  box-shadow: none;
-  padding-left: 30px; }
+  box-shadow: none; }
 
 header img {
   vertical-align: middle;
@@ -6625,9 +6626,9 @@ header img {
 header .hi {
   font-family: 'Overpass', sans-serif;
   color: white;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-48%);
+  -ms-transform: translateX(-48%);
+  transform: translateX(-48%);
   position: absolute;
   display: inline-block;
   left: 50%;
@@ -6655,7 +6656,8 @@ a.links {
   margin: 15px 0 23px;
   display: block;
   width: 200px;
-  height: 22px; }
+  height: 22px;
+  z-index: 99; }
 
 .sidebar {
   text-transform: lowercase; }
@@ -6690,7 +6692,7 @@ a.links {
   .about .row {
     width: 100%; }
   .about .languages {
-    margin-bottom: 0px; }
+    margin-bottom: 0; }
     .about .languages i {
       font-size: 72px;
       padding: 10px;
@@ -6715,12 +6717,16 @@ a.links {
     right: 10px;
     top: 10px;
     font-size: 18px; }
+  .about .experience .bullet {
+    margin-bottom: 10px; }
   .about .experience .bullet > .s1 {
     padding-right: 0; }
   .about .experience .bullet > .s11 {
     padding-left: 0; }
-  .about .experience .tags .chip {
-    background-color: #b0bec5; }
+  .about .experience .tags {
+    margin-top: 25px; }
+    .about .experience .tags .chip {
+      background-color: #b0bec5; }
 
 .projects {
   background: #e0e0e0; }
