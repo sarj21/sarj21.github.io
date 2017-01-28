@@ -6620,8 +6620,7 @@ header nav {
   box-shadow: none; }
 
 header img {
-  vertical-align: middle;
-  color: white; }
+  vertical-align: middle; }
 
 header .hi {
   font-family: 'Overpass', sans-serif;
@@ -6636,6 +6635,9 @@ header .hi {
 
 footer a {
   padding: 0 3px; }
+
+footer.page-footer {
+  margin-top: 0px; }
 
 a {
   text-decoration: none;
@@ -6762,6 +6764,10 @@ a.links {
   background: #f5f5f5; }
   .contact .sidebar li:nth-child(3) .sidebar-title {
     color: #43A047; }
+  .contact .row {
+    width: 100%; }
+  .contact .my-stuff {
+    margin-top: 10%; }
 
 .section {
   min-height: 100vh;
@@ -6781,6 +6787,5 @@ a.links {
   .section .subtitle {
     margin-top: 0;
     font-size: 20px; }
-
-.fixed {
-  position: fixed; }
+  .section .btn-large {
+    margin: 20px 0; }

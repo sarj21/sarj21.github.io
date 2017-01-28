@@ -66,7 +66,6 @@ header {
 
     img {
         vertical-align: middle;
-        color         : white;
     }
 
     .hi {
@@ -85,7 +84,12 @@ footer{
   a{
     padding: 0 3px;
   }
+  &.page-footer{
+    margin-top: 0px;
+  }
 }
+
+
 
 a {
     text-decoration: none;
@@ -304,6 +308,15 @@ a.links {
     .sidebar li:nth-child(3) .sidebar-title {
         color: #43A047;
     }
+
+    .row{
+      width: 100%;
+    }
+
+    .my-stuff{
+      margin-top: 10%;
+    }
+
 }
 //This should be strung together. E.g. about section or contact section
 //defines how i label each section with a heading and subtitle
@@ -328,8 +341,8 @@ a.links {
         margin-top: 0;
         font-size : 20px;
     }
-}
 
-.fixed {
-    position: fixed;
+    .btn-large{
+      margin: 20px 0;
+    }
 }
