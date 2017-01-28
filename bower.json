@@ -17,7 +17,6 @@
   ],
   "dependencies": {
     "devicon": "*",
-    "matchHeight": "*",
-    "slick-carousel": "^1.6.0"
+    "matchHeight": "*"
   }
 }
