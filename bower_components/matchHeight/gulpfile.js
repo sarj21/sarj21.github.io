@@ -35,8 +35,8 @@ gulp.task('release:push', function(callback) {
 
 gulp.task('release:push:github', function(callback) {
     return gulp.src([
-            'CHANGELOG.md',
-            buildDirectory + '/jquery.matchHeight-min.js',
+            'CHANGELOG.md', 
+            buildDirectory + '/jquery.matchHeight-min.js', 
             buildDirectory + '/jquery.matchHeight.js'
         ])
         .pipe(release({
@@ -163,9 +163,9 @@ gulp.task('test', function(done) {
             .pipe(webdriver({
                 baseUrl: 'http://localhost:8000'
             }))
-            .on('error', function(err) {
+            .on('error', function(err) { 
                 console.error(err);
-                error = err;
+                error = err; 
             })
             .on('finish', finish);
     });
