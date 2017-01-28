@@ -6590,7 +6590,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 header .hero {
   height: 100vh; }
 
-header img.splash {
+header .splash > img {
   position: absolute;
   z-index: -1;
   height: 100%;
@@ -6607,13 +6607,13 @@ header .preloader {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #eee;
+  background-color: #f5f5f5;
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-color: #f5f5f5; }
+  bottom: 0; }
 
 header nav {
   background-color: transparent;
@@ -6626,20 +6626,22 @@ header img {
 header .hi {
   font-family: 'Overpass', sans-serif;
   color: white;
-  -webkit-transform: translateX(-48%);
-  -ms-transform: translateX(-48%);
-  transform: translateX(-48%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   position: absolute;
   display: inline-block;
   left: 50%;
-  top: 30%;
-  text-align: center; }
+  top: 30%; }
+
+footer a {
+  padding: 0 3px; }
 
 a {
   text-decoration: none;
   color: black; }
 
-body > .row {
+main > .row {
   margin-bottom: 0 !important; }
 
 header span {

@@ -37,26 +37,26 @@ header {
         height: 100vh;
     }
 
-    img.splash {
+    .splash > img{
         position: absolute;
-        z-index: -1;
-        height: 100%;
-        width : 100%;
+        z-index : -1;
+        height  : 100%;
+        width   : 100%;
     }
 
     .preloader {
-      display: flex;
-align-items: center;
-justify-content: center;
-background-color: #eee;
-
-position: fixed;
-z-index: 100;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        background-color: #eee;
         background-color: color("grey", "lighten-4");
+
+        position        : fixed;
+        z-index         : 100;
+        top             : 0;
+        left            : 0;
+        right           : 0;
+        bottom          : 0;
     }
 
     nav {
@@ -72,13 +72,19 @@ bottom: 0;
     .hi {
         font-family: 'Overpass', sans-serif;
         color      : white;
-        transform  : translateX(-48%);
+        transform  : translateX(-50%);
         position   : absolute;
         display    : inline-block;
         left       : 50%;
         top        : 30%;
-        text-align : center;
     }
+}
+
+
+footer{
+  a{
+    padding: 0 3px;
+  }
 }
 
 a {
@@ -86,7 +92,11 @@ a {
     color          : black;
 }
 
-body > .row {
+body{
+  //overflow: hidden;
+}
+
+main > .row {
     margin-bottom: 0 !important;
 }
 
@@ -160,6 +170,7 @@ a.links {
     }
 }
 //I like this font a bit more than Roboto for my cards
+
 .card {
     // font-family: 'Open-Sans', sans-serif;
 }
