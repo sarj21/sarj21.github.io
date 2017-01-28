@@ -6610,7 +6610,6 @@ header .preloader {
   background-color: #f5f5f5;
   position: fixed;
   z-index: 100;
-  top: 0;
   left: 0;
   right: 0;
   bottom: 0; }
@@ -6631,13 +6630,11 @@ header .hi {
   position: absolute;
   display: inline-block;
   left: 50%;
-  top: 30%; }
-
-footer a {
-  padding: 0 3px; }
-
-footer.page-footer {
-  margin-top: 0px; }
+  top: 25%; }
+  header .hi h1 {
+    font-size: 9vh; }
+  header .hi h2 {
+    font-size: 6vh; }
 
 a {
   text-decoration: none;
@@ -6688,6 +6685,27 @@ a.links {
     position: fixed; }
   .sidebar .secondary-logo {
     position: absolute; }
+
+.section {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative; }
+  .section .col {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .section h2 {
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 10px;
+    text-transform: lowercase; }
+  .section .subtitle {
+    margin-top: 0;
+    font-size: 20px; }
+  .section .btn-large {
+    margin: 20px 0; }
 
 .about {
   background: #f5f5f5; }
@@ -6769,23 +6787,8 @@ a.links {
   .contact .my-stuff {
     margin-top: 10%; }
 
-.section {
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative; }
-  .section .col {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  .section h2 {
-    font-family: 'Overpass', sans-serif;
-    margin-bottom: 10px;
-    text-transform: lowercase; }
-  .section .subtitle {
-    margin-top: 0;
-    font-size: 20px; }
-  .section .btn-large {
-    margin: 20px 0; }
+footer.page-footer {
+  margin-top: 0; }
+
+footer .footer-copyright p {
+  margin-top: 0; }

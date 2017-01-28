@@ -37,7 +37,7 @@ header {
         height: 100vh;
     }
 
-    .splash > img{
+    .splash > img {
         position: absolute;
         z-index : -1;
         height  : 100%;
@@ -50,10 +50,8 @@ header {
         justify-content : center;
         background-color: #eee;
         background-color: color("grey", "lighten-4");
-
         position        : fixed;
         z-index         : 100;
-        top             : 0;
         left            : 0;
         right           : 0;
         bottom          : 0;
@@ -69,26 +67,22 @@ header {
     }
 
     .hi {
+        h1 {
+            font-size: 9vh;
+        }
+
+        h2 {
+            font-size: 6vh;
+        }
         font-family: 'Overpass', sans-serif;
         color      : white;
         transform  : translateX(-50%);
         position   : absolute;
         display    : inline-block;
         left       : 50%;
-        top        : 30%;
+        top        : 25%;
     }
 }
-
-
-footer{
-  a{
-    padding: 0 3px;
-  }
-  &.page-footer{
-    margin-top: 0px;
-  }
-}
-
 
 
 a {
@@ -96,8 +90,8 @@ a {
     color          : black;
 }
 
-body{
-  //overflow: hidden;
+body {
+    //overflow: hidden;
 }
 
 main > .row {
@@ -173,10 +167,31 @@ a.links {
         position: absolute;
     }
 }
-//I like this font a bit more than Roboto for my cards
 
-.card {
-    // font-family: 'Open-Sans', sans-serif;
+.section {
+    min-height: 100vh;
+    overflow  : hidden;
+    position  : relative;
+
+    .col {
+        flex-direction: column;
+        display       : flex;
+    }
+
+    h2 {
+        font-family   : 'Overpass', sans-serif;
+        margin-bottom : 10px;
+        text-transform: lowercase;
+    }
+
+    .subtitle {
+        margin-top: 0;
+        font-size : 20px;
+    }
+
+    .btn-large {
+        margin: 20px 0;
+    }
 }
 
 .about {
@@ -309,40 +324,21 @@ a.links {
         color: #43A047;
     }
 
-    .row{
-      width: 100%;
+    .row {
+        width: 100%;
     }
 
-    .my-stuff{
-      margin-top: 10%;
+    .my-stuff {
+        margin-top: 10%;
     }
-
 }
-//This should be strung together. E.g. about section or contact section
-//defines how i label each section with a heading and subtitle
 
-.section {
-    min-height: 100vh;
-    overflow  : hidden;
-    position  : relative;
-
-    .col {
-        flex-direction: column;
-        display       : flex;
-    }
-
-    h2 {
-        font-family   : 'Overpass', sans-serif;
-        margin-bottom : 10px;
-        text-transform: lowercase;
-    }
-
-    .subtitle {
+footer {
+    &.page-footer{
         margin-top: 0;
-        font-size : 20px;
     }
 
-    .btn-large{
-      margin: 20px 0;
+    .footer-copyright p{
+      margin-top: 0;
     }
 }

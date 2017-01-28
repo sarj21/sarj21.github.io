@@ -51,21 +51,27 @@
         <!-- Begin Main Hero -->
         <div class="splash hero">
             <img src="./images/splash.jpg">
-            <div>
                 <nav>
                     <div class="nav-wrapper">
-                        <a href="#!" class="brand-logo center">
-                            <img src="images/logo.svg" height="85px" style="margin-top: 15px;">
+                        <a href="#!" class="brand-logo center hide-on-med-and-down">
+                            <img src="images/logo.svg">
                         </a>
+                        <a href="#!" class="brand-logo left hide-on-large-only">
+                            <img src="images/logo.svg">
+                        </a>
+                        <ul class="right hide-on-large-only">
+                          <li><a href="#about">About</a></li>
+                          <li><a href="#projects">Projects</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </nav>
-            </div>
             <div class="row">
                 <div class="col l2">
                     <!-- Wow this looks confusing...It kind of is -->
                     <!-- Basically the links sit on top of the page at z index 99 -->
                     <!-- The menu is very tricky so in order not to have 12 sets of links I do this -->
-                    <div class="sidebar-links">
+                    <div class="sidebar-links hide-on-med-and-down">
                         <a href="#about" class="links"></a>
                         <a href="#projects" class="links"></a>
                         <a href="#contact" class="links"></a>
@@ -385,8 +391,8 @@
                 <div class="row">
                     <h3> things i've done (and am still doing) </h3>
                     <div class="row">
-                            <div class="col s12 m11">
-                              <div class="row">
+                        <div class="col s12 m11">
+                            <div class="row">
 
                                 <div class="col s12 m6">
                                     <a href="#">
@@ -420,7 +426,7 @@
                                     <a href="http://creo-3d.com/">
                                         <div class="card hoverable waves-effect waves-light red accent-2">
                                             <div class="card-image">
-                                                <img src="images/creo-3d-peek.jpg">
+                                                <img src="images/creo-peek.png">
                                                 <span class="card-title">Creo 3D Printing Startup</span>
                                             </div>
                                             <div class="card-content">
@@ -462,7 +468,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col l10">
+            <div class="col l10" style="width: 100%;">
 
                 <h2> some stuff you might want</h2>
                 <p class="subtitle"> hopefully </p>
@@ -493,15 +499,13 @@
     <div class="container">
         <div class="row">
             <div class="col s8">
-                <p class="grey-text text-lighten-4 valign-wrapper"> Powered by
-                    <a href="http://materializecss.com/" class="white-text"> Materialize </a>,
-                    <a href="https://www.javascript.com/" class="white-text"> JS </a>,
-                    <a href="http://www.sass-lang.com/" class="white-text"> Sass </a>,
-                    <a href="https://www.stackoverflow.com/" class="white-text"> StackOverflow </a>,
-                    <a href="https://www.google.com/maps/search/coffee+shops/@42.1015893,-80.0866241,12z/data=!3m1!4b1" class="white-text"> and a lot of coffee. </a>
+                <p class="grey-text text-lighten-4"> Powered by
+                    <a href="http://materializecss.com/" class="white-text"> Materialize</a>,
+                    <a href="https://www.javascript.com/" class="white-text"> JS</a>,
+                    <a href="http://www.sass-lang.com/" class="white-text"> Sass</a>,
+                    <a href="https://www.stackoverflow.com/" class="white-text"> StackOverflow</a>,
+                    <a href="https://www.google.com/maps/search/coffee+shops/@42.1015893,-80.0866241,12z/data=!3m1!4b1" class="white-text"> and a lot of coffee.</a>
                 </p>
-                <p class="grey-text text-lighten-4 valign-wrapper"> Made with <i class="valign tiny material-icons" style="color: red; padding: 0 2px">favorite</i> in Erie, PA</p>
-
             </div>
             <div class="col s4">
             </div>
@@ -509,6 +513,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
+            <p class="grey-text text-lighten-4 valign-wrapper"> Made with <i class="valign tiny material-icons" style="color: red; padding: 0 2px">favorite</i> in Erie, PA</p>
 
         </div>
     </div>
