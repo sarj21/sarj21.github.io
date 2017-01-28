@@ -2,7 +2,7 @@
 
 A personal site I made for all of my projects and experience (though its not much). All of the projects are probably in my github also. Below are all of the licenses I used.
 
-##Sass (http://sass-lang.com/)
+##[Sass](http://sass-lang.com/)
 =================================
 
 Copyright (c) 2006-2016 Hampton Catlin, Natalie Weizenbaum, and Chris Eppstein
@@ -14,7 +14,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-##Materialize (http://materializecss.com/)
+##[Materialize](http://materializecss.com/)
 =================================
 Copyright (c) 2014-2017 Materialize
 
@@ -35,3 +35,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+##Photos from [Unsplash](https://unsplash.com/)
+
+Placeholder from https://unsplash.com/@marksolarski
+Splash from https://unsplash.com/@albertc
+
