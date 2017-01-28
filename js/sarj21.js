@@ -1,7 +1,6 @@
 $(window).on('load', function() {
     console.log("start fade");
     $('.preloader').delay(1000).fadeOut('slow');
-
 });
 
 
