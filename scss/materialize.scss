@@ -30,6 +30,7 @@
 @import "components/date_picker/default";
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
+
 $menu-color: white;
 
 header {
@@ -83,7 +84,6 @@ header {
         top        : 25%;
     }
 }
-
 
 a {
     text-decoration: none;
@@ -341,4 +341,12 @@ footer {
     .footer-copyright p{
       margin-top: 0;
     }
+}
+
+.project-page{
+  font-family: "Open Sans", sans-serif;
+}
+.card-panel.project{
+  margin-top: 15vh;
+  height: 98vh;
 }
