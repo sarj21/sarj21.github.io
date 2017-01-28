@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "devicon": "*"
+    "devicon": "*",
+    "matchHeight" : "*"
   }
 }
