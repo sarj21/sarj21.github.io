@@ -1,5 +1,7 @@
 # sarj21.github.io
 
+A personal site I made for all of my projects and experience (though its not much). All of the projects are probably in my github also. Below are all of the licenses I used.
+
 ##Sass (http://sass-lang.com/)
 =================================
 
