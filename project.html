@@ -14,25 +14,158 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Materialize JS -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- Devicons, those pretty language icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" />
+
+    <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 </head>
 
-<body class="project-page grey">
+<body class="project-page grey lighten-3">
     <header>
-        <nav>
-
-        </nav>
+        <!-- <nav>
+            <div class="nav-wrapper white">
+                <span class="black-text" style="font-size: 24px;"> Creo - A 3D Printing Startup </span>
+            </div>
+        </nav> -->
     </header>
     <main>
-        <div class="row">
-            <div class="col s10 offset-s1">
+        <div class="blue banner"></div>
+        <div class="row" style="padding-top: 120px;">
+            <div class="col s12 m10 offset-m1">
+                <div class="card-panel white" style="min-height: 80vh;">
+                    <div class="row">
+                        <div class="col s12 m10">
+                            <h3 class="title">Creo &mdash; a startup for 3D printing</h3>
+                        </div>
+                        <div class="col s12 m2">
+                            <a href="http://creo-3d.com" class="waves-effect waves-light btn right"> Website </a>
+                        </div>
 
+                    </div>
+                    <!-- <h3 class="grey-text">a 3D printing startup</h3> -->
+                    <img src="images/creo-image2.png" alt="" width="100%;">
+                    <div class="description flow-text">
+                        <p> Creo is a small startup I made with 3 other engineers from Virginia Tech. Generally, there isn't much access to 3D printing as it is still a new and upcoming technology.</p>
+                        <p> The website serves to list all of the materials we stock and provide quick information on what we do. The materials section uses cards I designed, one for each material. Each material has a large modal that lists colors, pros and
+                            cons of the material, and a description one of our engineers writes.</p>
+                        <p> The idea was to make it easy, whether you know a lot about 3D printing or don't, to see what we do and if what we are what you are looking for.</p>
+                    </div>
+                </div>
+                <div class="card-panel white" id="v1" style="min-height: 40vh;">
+                    <h3 class="title">version 1.0</h3>
+                    <div class="row used center">
+                        <div class="col s2 offset-s1">
+                            <i class="devicon-mysql-plain colored"></i>
+                        </div>
+                        <div class="col s2">
+                            <i class="devicon-php-plain colored"></i>
+                        </div>
+                        <div class="col s2">
+                            <i class="devicon-jquery-plain colored"></i>
+                        </div>
+                        <div class="col s2">
+                            <i class="devicon-bootstrap-plain colored"></i>
+                        </div>
+                        <div class="col s2">
+                            <img src="images/stripe.png" alt="">
+                        </div>
+                    </div>
+                    <div class="description flow-text">
+                        <p> For the first build of the site, I had to create a rather large page to allow people to submit files to us. </p>
+                        <p>Though this seems simple at first, there were a lot of things that needed to be done: </p>
+                        <ul class="collection">
+                            <li class="collection-item"><strong>Submitting Files:</strong> Users needed to be able to submit all kinds of standard 3D files (.obj, .stl, .ply, etc.)</li>
+                            <li class="collection-item"><strong>Customizing:</strong> I needed a way to show the user their part, so i used x3dom to show them a rendering of the object. My rendering had scale and color. This way the user could mess with scale and change the color
+                                of their part and see the feedback right there on the screen</li>
+                            <li class="collection-item"><strong>Payments:</strong> Our pricing was done by the amount of material used. I took the amount of material from x3dom, material type chosen, and several other factors in to create a price. Then payments were handled through
+                                stripe
+                            </li>
+                        </ul>
+                        <p>In order to keep things tidy, I had the customization page be a bit smart about what it served the user. Initially, all materials were stored in a MySQL database. My options page would look at your part and only serve up options
+                            we had available. </p>
+                        <p>For example, if your part required 8in<sup>3</sup> of material. First, I'd only serve up colors that we had 8in<sup>3</sup> of in the material you chose. This way, users had it easy. </p>
+                    </div>
+                </div>
+                <div class="card-panel white" id="v2" style="min-height: 40vh;">
+                    <span class="status right"> current build</span>
+                    <h3 class="title">version 2.0</h3>
+                    <div class="row used center">
+                        <div class="col s2 offset-s2">
+                            <img src="images/materialize.png" alt="">
+                        </div>
+                        <div class="col s2">
+                            <i class="devicon-jquery-plain colored"></i>
+                        </div>
+                        <div class="col s2">
+                            <i class="devicon-mysql-plain colored"></i>
+                        </div>
+                        <div class="col s2">
+                            <i class="devicon-php-plain colored"></i>
+                        </div>
+                    </div>
+                    <div class="description flow-text">
+                        <p> In this version, we all decided to move toward using 3DHubs for all of our printing services. This really took a lot of the strain off of us when it came to processing orders and communicating with customers </p>
+                        <p> 3DHubs specializes in exactly what I was doing with our form. They are something like a social network for 3D printing. People who have 3D printer, companies and just people, can list themselves (as a hub) then people who need
+                            3D printers can find and use them here.</p>
+                        <p> We officially partnered with 3D Hubs in their Student Ambassador Program as the ambassador for Virginia Tech. There aren't really many hubs in the area, and none have the selection of material we do, so this was a great move.</p>
+                        <p> Thus I redid the webpage in a sleeker one-page layout and went from bootstrap to materialize. The two function very similarly but materialize had the Google Material Design Standard in mind so I opted for it </p>
+                        <p>Materials in the second section still query our database. If we set a material amount to 0, it won't show up here. Further, the colors come directly from the database. Adding a color automatically adds it to the material description.
+                            Makes it easy on us.</p>
+                    </div>
+                </div>
+                <div class="card-panel white" id="v3" style="min-height: 40vh;">
+                    <span class="status right"> pending release</span>
+                    <h3 class="title">version 3.0</h3>
+                    <div class="row used center">
+                        <div class="col s2 offset-s3">
+                            <i class="devicon-amazonwebservices-original colored"></i>
+                        </div>
+                        <div class="col s2">
+                            <i class="devicon-jquery-plain colored"></i>
+                        </div>
+                        <div class="col s2">
+                            <img src="images/materialize.png" alt="">
+                        </div>
+                    </div>
+                    <div class="description flow-text">
+                        <p>With this build I decided that using the server we are using, one I just happen to have access to that runs windows server, is not really necessary.</p>
+                        <p>Using 3D Hubs means that our materials aren't automatically updated when orders are made. In v1.0, orders would automatically update the database by subtracting themselves from stock upon completion. Now, however, the people putting
+                            in the orders don't always keep track</p>
+                        <p>It also doesn't help that only I can access the server by VMing in. Moving to AWS will make the site a little more accesible to the other owners. I'm thinking to just move the inventory to a simple json file, hopefully they will
+                            update a material when it runs out and add in new materials as we recieve them</p>
+                    </div>
+                </div>
             </div>
         </div>
 
+
+
+
     </main>
     <footer>
+        <!-- <div class="my-owl">
+              <div class="owl-carousel owl-theme">
+                  <div> <img src="images/creo-image1.png" alt=""> </div>
+                  <div> <img src="images/creo-image2.png" alt=""> </div>
+              </div>
+          </div> -->
 
+        <!-- <script type="text/javascript">
+            $(document).ready(function() {
+                $('.owl-carousel').owlCarousel({
+                    items: 1,
+                    margin: 15,
+                    loop: true,
+                    dots: true,
+                    autoplay: true,
+                    lazyLoad: true,
+                    autoplayHoverPause: true
+                });
+            });
+        </script> -->
     </footer>
 </body>
 

@@ -30,7 +30,6 @@
 @import "components/date_picker/default";
 @import "components/date_picker/default.date";
 @import "components/date_picker/default.time";
-
 $menu-color: white;
 
 header {
@@ -334,19 +333,75 @@ a.links {
 }
 
 footer {
-    &.page-footer{
+    &.page-footer {
         margin-top: 0;
     }
 
-    .footer-copyright p{
-      margin-top: 0;
+    .footer-copyright p {
+        margin-top: 0;
     }
 }
 
-.project-page{
-  font-family: "Open Sans", sans-serif;
-}
-.card-panel.project{
-  margin-top: 15vh;
-  height: 98vh;
+.project-page {
+    font-family: "Open Sans", sans-serif;
+
+    strong {
+        font-weight: 600;
+    }
+
+    .btn{
+      margin  : 35px;
+    }
+
+    .card-panel {
+        padding: 0;
+    }
+
+    .title {
+        padding: 30px;
+        margin : 0;
+    }
+
+    .description {
+        padding  : 30px;
+        margin   : 0;
+        font-size: 18px;
+    }
+
+    .status {
+        padding: 10px 15px 0 0;
+    }
+
+    .used {
+        margin: 30px;
+
+        i {
+            font-size: 48px;
+        }
+
+        img {
+            height: 48px;
+        }
+
+        .col {
+            // margin: 10px auto;
+        }
+    }
+
+    .banner {
+        position: absolute;
+        height  : 40vh;
+        width   : 100vw;
+        z-index : -1;
+    }
+
+    .my-owl {
+        margin-top: 30px;
+
+        img {
+            max-height: 450px;
+            width     : 100%;
+            display   : block;
+        }
+    }
 }
