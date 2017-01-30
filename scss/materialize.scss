@@ -249,14 +249,13 @@ a.links {
 
         .bullet {
             margin-bottom: 10px;
-        }
+            & > .s1 {
+                padding-right: 0;
+            }
+            i {
+              margin-top: -2px;
+            }
 
-        .bullet > .s1 {
-            padding-right: 0;
-        }
-
-        .bullet > .s11 {
-            padding-left: 0;
         }
 
         .tags {
@@ -349,8 +348,8 @@ footer {
         font-weight: 600;
     }
 
-    .btn{
-      margin  : 35px;
+    .btn {
+        margin: 35px;
     }
 
     .card-panel {
